@@ -1,0 +1,230 @@
+/*LOADER-7*/
+.loader {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 75px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.loader-7 .line {
+  width: 8px;
+  position: absolute;
+  border-radius: 5px;
+  bottom: 0;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#1ee95d),
+    to(#5714ce)
+  );
+  background: -webkit-linear-gradient(top, #1ee95d, #5714ce);
+  background: -o-linear-gradient(top, #1ee95d, #5714ce);
+  background: linear-gradient(to bottom, #1ee95d, #5714ce);
+
+  /* background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#00FEEF),
+    to(#552586)
+  );
+  background: -webkit-linear-gradient(top, #00FEEF, #552586);
+  background: -o-linear-gradient(top, #00FEEF, #552586);
+  background: linear-gradient(to bottom, #00FEEF, #552586); */
+}
+
+.loader-7 .line1 {
+  left: 0;
+  -webkit-animation: line-grow 0.5s ease alternate infinite;
+  animation: line-grow 0.5s ease alternate infinite;
+}
+
+.loader-7 .line2 {
+  left: 20px;
+  -webkit-animation: line-grow 0.5s 0.2s ease alternate infinite;
+  animation: line-grow 0.5s 0.2s ease alternate infinite;
+}
+
+.loader-7 .line3 {
+  left: 40px;
+  -webkit-animation: line-grow 0.5s 0.4s ease alternate infinite;
+  animation: line-grow 0.5s 0.4s ease alternate infinite;
+}
+@-webkit-keyframes line-grow {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 75%;
+  }
+}
+
+@keyframes line-grow {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 75%;
+  }
+}
+/*LOADER-6*/
+
+.loader-6 {
+  border: 6px groove #59ba56;
+  /* border: 6px groove #804FB3; */
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-animation: loader-1-inner 1s ease-out alternate infinite;
+  animation: loader-1-inner 1s ease-out alternate infinite;
+}
+
+.loader-6 .loader-inner {
+  border: 0px inset #30cfd0;
+  /* border: 0px inset #00FEEF; */
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: border-zoom 1s ease-out alternate infinite;
+  animation: border-zoom 1s ease-out alternate infinite;
+}
+@-webkit-keyframes loader-1-inner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes loader-1-inner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes border-zoom {
+  0% {
+    border-width: 0px;
+  }
+  100% {
+    border-width: 10px;
+  }
+}
+
+@keyframes border-zoom {
+  0% {
+    border-width: 0px;
+  }
+  100% {
+    border-width: 10px;
+  }
+}
+
+.brace {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 4vh;
+  opacity: 0.8;
+  display: inline-block;
+  -webkit-animation: pulse 0.4s alternate infinite ease-in-out;
+  animation: pulse 0.4s alternate infinite ease-in-out;
+}
+.brace.close {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+@-webkit-keyframes pulse {
+  to {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
+@keyframes pulse {
+  to {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
+
+/* -- gear --*/
+.gear-spin {
+  /* width: 30px;
+  height: 20px; */
+  position: relative;
+  display: inline-block;
+}
+.gear-spin::before {
+  content: "";
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  background-image: radial-gradient(
+      circle 8px at 18px 18px,
+      var(--dark) 100%,
+      transparent 0
+    ),
+    radial-gradient(circle 4px at 18px 0px, var(--dark) 100%, transparent 0),
+    radial-gradient(circle 4px at 0px 18px, var(--dark) 100%, transparent 0),
+    radial-gradient(circle 4px at 36px 18px, var(--dark) 100%, transparent 0),
+    radial-gradient(circle 4px at 18px 36px, var(--dark) 100%, transparent 0),
+    radial-gradient(circle 4px at 30px 5px, var(--dark) 100%, transparent 0),
+    radial-gradient(circle 4px at 30px 5px, var(--dark) 100%, transparent 0),
+    radial-gradient(circle 4px at 30px 30px, var(--dark) 100%, transparent 0),
+    radial-gradient(circle 4px at 5px 30px, var(--dark) 100%, transparent 0),
+    radial-gradient(circle 4px at 5px 5px, var(--dark) 100%, transparent 0);
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  animation: rotationBack 3s linear infinite;
+}
+.gear-spin::after {
+  content: "";
+  left: 35px;
+  top: 15px;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-image: radial-gradient(
+      circle 5px at 12px 12px,
+      var(--dark) 100%,
+      transparent 0
+    ),
+    radial-gradient(circle 2.5px at 12px 0px, var(--dark) 100%, transparent 0),
+    radial-gradient(circle 2.5px at 0px 12px, var(--dark) 100%, transparent 0),
+    radial-gradient(circle 2.5px at 24px 12px, var(--dark) 100%, transparent 0),
+    radial-gradient(circle 2.5px at 12px 24px, var(--dark) 100%, transparent 0),
+    radial-gradient(circle 2.5px at 20px 3px, var(--dark) 100%, transparent 0),
+    radial-gradient(circle 2.5px at 20px 3px, var(--dark) 100%, transparent 0),
+    radial-gradient(circle 2.5px at 20px 20px, var(--dark) 100%, transparent 0),
+    radial-gradient(circle 2.5px at 3px 20px, var(--dark) 100%, transparent 0),
+    radial-gradient(circle 2.5px at 3px 3px, var(--dark) 100%, transparent 0);
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  animation: rotationBack 4s linear infinite reverse;
+}
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}

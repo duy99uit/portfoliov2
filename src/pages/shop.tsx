@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import MainHeader from "@/components/MainHeader";
+import HeroSection from "@/components/HeroSection";
 
 const Shop: NextPage = () => {
   return (
@@ -13,7 +14,9 @@ const Shop: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainHeader />
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        <HeroSection />
+      </main>
 
       <footer className={styles.footer}>
         <a
