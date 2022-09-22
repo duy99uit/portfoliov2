@@ -1,3 +1,3 @@
 export const appConfig = {
-  webMainTitle: "Store",
+  webMainTitle: "Duy Portfolio | Mobile Developer",
 };

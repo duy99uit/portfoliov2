@@ -1,8 +1,8 @@
 const ExpsSection = (props: any) => {
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className="bg-white ">
       <div className="container px-6 py-10 mx-auto">
-        <h1 className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
+        <h1 className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl ">
           Our Executive Team
         </h1>
 
@@ -20,7 +20,7 @@ const ExpsSection = (props: any) => {
               alt=""
             />
 
-            <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">
+            <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize  group-hover:text-white">
               arthur melo
             </h1>
 

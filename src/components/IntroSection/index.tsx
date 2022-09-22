@@ -8,7 +8,7 @@ import {
 
 const IntroSection = (props: any) => {
   return (
-    <section className="bg-white min-h-screen items-center justify-center flex">
+    <section className="bg-gray-900 min-h-screen items-center justify-center flex">
       <div className="container flex flex-col items-center justify-center px-4 py-12 mx-auto ">
         <div className="flex justify-center mb-8 mt-4 sm:mt-0 ">
           <img
@@ -24,12 +24,12 @@ const IntroSection = (props: any) => {
             Hi, My Name Is Doan The Duy
           </h2>
 
-          <p className="block mt-4  text-gray-500  max-w-2xl text-center">
+          <p className="block mt-4  text-white  max-w-2xl text-center">
             I&apos;m a <span className="text-blue-700">Mobile Developer</span>{" "}
             living in Ho Chi Minh City. I really enjoy creating beautifully
             designed, intuitive, functional and trendy products.
           </p>
-          <p className="mt-5 mb-1 text-xl text-gray-700 font-medium">
+          <p className="mt-5 mb-1 text-xl text-gray-300 font-medium">
             Technology I know{" "}
           </p>
           <div className="flex flex-row flex-wrap justify-center items-center">
