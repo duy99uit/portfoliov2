@@ -1,13 +1,13 @@
 const NavBar = (props: any) => {
   return (
-    <header className="shadow-sm fixed top-0 left-0 w-full z-10">
-      <div className="p-4 mx-auto max-w-screen-xl">
+    <header className="shadow-sm fixed top-0 left-0 w-full z-10 bg-white">
+      <div className="px-4 py-2 mx-auto max-w-screen-xl">
         <div className="flex items-center justify-between space-x-4 lg:space-x-10">
           <div className="flex lg:w-0 lg:flex-1">
             {/* <span className="w-20 h-10 bg-gray-200 rounded-lg"></span> */}
           </div>
 
-          <nav className="hidden text-sm font-medium space-x-8 md:flex">
+          <nav className="hidden text-sm font-medium space-x-8 md:flex px-4 py-2 rounded-full border-blue-500 border-2">
             <a className="text-gray-500" href="">
               About
             </a>
