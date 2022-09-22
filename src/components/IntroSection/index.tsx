@@ -1,6 +1,10 @@
 import Tag from "../Tag";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPeopleLine } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPeopleLine,
+  faMobileAndroid,
+  faTabletAndroid,
+} from "@fortawesome/free-solid-svg-icons";
 
 const IntroSection = (props: any) => {
   return (
@@ -16,7 +20,7 @@ const IntroSection = (props: any) => {
 
         <div className="flex flex-col items-center mt-6  xl:mt-0">
           <h2 className="text-2xl  tracking-tight text-blue-700 font-medium text-center">
-            <FontAwesomeIcon icon={faPeopleLine} />
+            {/* <FontAwesomeIcon icon={faTabletAndroid} /> */}
             Hi, My Name Is Doan The Duy
           </h2>
 
