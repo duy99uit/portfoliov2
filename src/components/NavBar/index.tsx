@@ -1,6 +1,6 @@
 const NavBar = (props: any) => {
   return (
-    <header className="shadow-sm">
+    <header className="shadow-sm fixed top-0 left-0 w-full z-10">
       <div className="p-4 mx-auto max-w-screen-xl">
         <div className="flex items-center justify-between space-x-4 lg:space-x-10">
           <div className="flex lg:w-0 lg:flex-1">

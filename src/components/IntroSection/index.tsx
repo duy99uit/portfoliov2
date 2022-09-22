@@ -1,28 +1,41 @@
+import Tag from "../Tag";
+
 const IntroSection = (props: any) => {
   return (
     <section className="bg-white min-h-screen items-center justify-center flex">
       <div className="container flex flex-col items-center justify-center px-4 py-12 mx-auto ">
         <div className="flex justify-center mb-4">
           <img
-            className="h-10 w-10 sm:w-[10rem] sm:h-[10rem] flex-shrink-0 object-cover rounded-full"
-            src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
+            className="h-28 w-28  flex-shrink-0 object-cover rounded-full border-4 border-gray-500"
+            src="https://duy99uit.github.io/img/duyduy.jpg"
             alt=""
           />
         </div>
 
         <div className="flex flex-col items-center mt-6  xl:mt-0">
-          <h2 className="text-2xl font-light tracking-tight text-gray-800e">
+          <h2 className="text-2xl  tracking-tight text-blue-700 font-medium">
             Hi, My Name Is Doan The Duy
           </h2>
 
           <p className="block mt-4  text-gray-500  max-w-2xl text-center">
             I&apos;m a <span className="text-blue-700">Mobile Developer</span>{" "}
             living in Ho Chi Minh City. I really enjoy creating beautifully
-            designed, intuitive, functional and trendy websites. Want to talk
-            about a project? You can get in touch with me Here
+            designed, intuitive, functional and trendy products.
           </p>
+          <p className="mt-5 mb-1 text-xl text-gray-700 font-medium">
+            Technology I know{" "}
+          </p>
+          <div className="flex flex-row flex-wrap justify-center items-center">
+            {["React Native", "TypeScript", "Javascript"].map((item) => {
+              return (
+                <div key={item} className="mx-1 mb-2">
+                  <Tag tagName={item} />
+                </div>
+              );
+            })}
+          </div>
 
-          <div className="mt-6 sm:-mx-2">
+          {/* <div className=" sm:-mx-2">
             <div className="inline-flex w-full overflow-hidden rounded-lg shadow sm:w-auto sm:mx-2">
               <a
                 href="#"
@@ -92,7 +105,7 @@ const IntroSection = (props: any) => {
                 <span className="mx-2">Get it on Google Play</span>
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
