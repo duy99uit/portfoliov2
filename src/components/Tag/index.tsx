@@ -8,4 +8,13 @@ function Tag(props: any) {
     </div>
   );
 }
+export const ProjectTag = (props: {
+  tagName: string;
+  tagType?: "mobile" | "web";
+}) => {
+  const { tagName, tagType = "mobile" } = props;
+  if (tagType === "web") return <div></div>;
+  return <div></div>;
+};
+
 export default Tag;

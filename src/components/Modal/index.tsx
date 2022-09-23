@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { ButtonOutline, ButtonPrimary, ButtonClose } from "@/components/Button";
 import MyInput from "@/components/Input";
 const MyModal = (props: any) => {
-  const [isOpenModal, setIsOpenModal] = useState<boolean>(false);
+  // const [isOpenModal, setIsOpenModal] = useState<boolean>(false);
+  const { isOpenModal, onClose } = props;
   return (
     <div>
       {isOpenModal && (
         <div
-          className="py-12 bg-gray-700 transition duration-150 ease-in-out z-10 absolute top-0 right-0 bottom-0 left-0 h-screen"
+          className="py-12 bg-gray-700 transition duration-150 ease-in-out z-10 fixed top-0 right-0 bottom-0 left-0 h-screen"
           id="modal"
         >
           <div
@@ -25,33 +26,13 @@ const MyModal = (props: any) => {
 
               <div className="flex items-center justify-start w-full">
                 <ButtonPrimary>Submit</ButtonPrimary>
-                <ButtonOutline
-                  onClick={() => {
-                    setIsOpenModal(false);
-                  }}
-                >
-                  Cancel
-                </ButtonOutline>
+                <ButtonOutline onClick={onClose}>Cancel</ButtonOutline>
               </div>
-              <ButtonClose
-                onClick={() => {
-                  setIsOpenModal(false);
-                }}
-              />
+              <ButtonClose onClick={onClose} />
             </div>
           </div>
         </div>
       )}
-
-      <div className="w-full flex justify-center py-12" id="button">
-        <ButtonPrimary
-          onClick={() => {
-            setIsOpenModal(true);
-          }}
-        >
-          Open Modal
-        </ButtonPrimary>
-      </div>
     </div>
   );
 };

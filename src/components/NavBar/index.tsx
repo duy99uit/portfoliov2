@@ -33,18 +33,6 @@ const NavBar = (props: any) => {
                 </div>
               );
             })}
-            {/* <a className="text-gray-500" href="">
-              About
-            </a>
-            <a className="text-gray-500" href="">
-              Blog
-            </a>
-            <a className="text-gray-500" href="">
-              Projects
-            </a>
-            <a className="text-gray-500" href="">
-              Contact
-            </a> */}
           </nav>
 
           <div className="items-center justify-end flex-1 hidden space-x-4 sm:flex">
