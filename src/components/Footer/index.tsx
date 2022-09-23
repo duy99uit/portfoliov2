@@ -47,7 +47,7 @@ const Footer = (props: any) => {
             </p>
             <div className="items-start mt-2">
               <ButtonNavigation>
-                <span className="mr-2">See more </span>
+                <span className="mr-2">View now </span>
                 <FontAwesomeIcon icon={faArrowRight} />
               </ButtonNavigation>
             </div>
