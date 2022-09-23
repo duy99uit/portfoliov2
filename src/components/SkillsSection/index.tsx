@@ -1,5 +1,7 @@
 import { expData } from "./expData";
 import { ExpItem } from "./ExpItem";
+import { skillData } from "./skillData";
+import { SkillItem } from "./SkillItem";
 
 const SkillsSection = (props: any) => {
   return (
@@ -12,6 +14,12 @@ const SkillsSection = (props: any) => {
         <div className="grid grid-cols-1 gap-4 mt-4 xl:mt-12  md:grid-cols-2 xl:grid-cols-2">
           {expData.map((item) => {
             return <ExpItem key={item.id} {...item} />;
+          })}
+        </div>
+
+        <div className="grid grid-cols-1 gap-4 mt-4 md:grid-cols-4 xl:grid-cols-8">
+          {skillData.map((item) => {
+            return <SkillItem key={item.id} {...item} />;
           })}
         </div>
       </div>

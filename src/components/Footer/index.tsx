@@ -8,7 +8,7 @@ import NextImage from "../NextImage";
 
 const Footer = (props: any) => {
   return (
-    <footer className="bg-white">
+    <footer className="bg-gray-800">
       <div className="container px-6 py-8 mx-auto">
         <div className="text-center">
           <a
@@ -30,7 +30,7 @@ const Footer = (props: any) => {
             <ButtonOutline>Get started</ButtonOutline>
           </div>
         </div>
-        <div className="mt-6 flex flex-col max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-lg md:flex-row ">
+        <div className="mt-6 flex flex-col max-w-4xl mx-auto overflow-hidden bg-gray-700 rounded-lg shadow-lg md:flex-row ">
           <div className="ư-full sm:w-2/5 h-48 rounded-t-md overflow-hidden">
             <NextImage src={nextBlog} />
           </div>

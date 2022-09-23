@@ -1,5 +1,4 @@
 import AboutSection from "@/components/AboutSection";
-import ExpsSection from "@/components/ExpsSection";
 import IntroSection from "@/components/IntroSection";
 import NavBar from "@/components/NavBar";
 import ProjectSection from "@/components/ProjectSection";
@@ -12,7 +11,6 @@ export default function HomeContainer() {
       <IntroSection />
       <AboutSection />
       <SkillsSection />
-      <ExpsSection />
       <ProjectSection />
     </>
   );
