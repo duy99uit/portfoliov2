@@ -1,10 +1,16 @@
 import { Links } from "@/config/constant";
 import {
-  faFacebook, faGithub, faInstagram, faLinkedin
+  faFacebook,
+  faGithub,
+  faInstagram,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import {
-  faCakeCandles, faEnvelope, faLocationDot,
-  faPhone, faUser
+  faCakeCandles,
+  faEnvelope,
+  faLocationDot,
+  faPhone,
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const AboutSection = (props: any) => {
@@ -26,14 +32,6 @@ const AboutSection = (props: any) => {
             <h3 className=" text-blue-500 uppercase text-xl">
               Duy&apos;s Profile
             </h3>
-
-            {/* <a
-              href="#"
-              className="block mt-4 text-2xl font-semibold text-gray-800 hover:underline  md:text-3xl"
-            >
-              All the features you want to know
-            </a> */}
-
             {[
               {
                 id: 1,
@@ -76,10 +74,12 @@ const AboutSection = (props: any) => {
                 return (
                   <div
                     key={item.id}
-                    className="px-4 py-1  items-center rounded bg-gradient-to-r from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200"
+                    className="px-2 py-1 flex flex-row flex-wrap items-center rounded bg-gradient-to-r from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200"
                   >
                     <FontAwesomeIcon icon={item.icon} color="#3b82f6" />
-                    <span className="ml-2 text-sm">{item.content}</span>
+                    <span className="ml-2 text-sm line-clamp-1">
+                      {item.content}
+                    </span>
                   </div>
                 );
               })}

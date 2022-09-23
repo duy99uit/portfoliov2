@@ -1,3 +1,11 @@
+import { nextBlog } from "@/assets";
+import { appConfig } from "@/config/appConfig";
+import { faDownload, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ButtonOutline, ButtonPrimary } from "../Button";
+import { ButtonNavigation } from "../Button/ButtonPrimary";
+import NextImage from "../NextImage";
+
 const Footer = (props: any) => {
   return (
     <footer className="bg-white">
@@ -15,62 +23,57 @@ const Footer = (props: any) => {
           </p>
 
           <div className="flex flex-col mt-4 sm:flex-row sm:items-center sm:justify-center">
-            <button className="flex items-center justify-center order-1 w-full px-2 py-2 mt-3 text-sm tracking-wide text-gray-600 capitalize transition-colors duration-300 transform border rounded-md sm:mx-2 dark:border-gray-400 dark:text-gray-300 sm:mt-0 sm:w-auto hover:bg-gray-50 focus:outline-none focus:ring dark:hover:bg-gray-800 focus:ring-gray-300 focus:ring-opacity-40">
-              <svg
-                className="w-5 h-5 mx-1"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C21.9939 17.5203 17.5203 21.9939 12 22ZM4 12.172C4.04732 16.5732 7.64111 20.1095 12.0425 20.086C16.444 20.0622 19.9995 16.4875 19.9995 12.086C19.9995 7.68451 16.444 4.10977 12.0425 4.086C7.64111 4.06246 4.04732 7.59876 4 12V12.172ZM10 16.5V7.5L16 12L10 16.5Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-
+            <ButtonPrimary>
+              <FontAwesomeIcon icon={faDownload} />
               <span className="mx-1">View Demo</span>
-            </button>
+            </ButtonPrimary>
+            <ButtonOutline>Get started</ButtonOutline>
+          </div>
+        </div>
+        <div className="mt-6 flex flex-col max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-lg md:flex-row ">
+          <div className="ư-full sm:w-2/5 h-48 rounded-t-md overflow-hidden">
+            <NextImage src={nextBlog} />
+          </div>
 
-            <button className="w-full px-5 py-2 text-sm tracking-wide capitalize transition-colors duration-300 transform bg-blue-600 rounded-md sm:mx-2 sm:order-2 sm:w-auto hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
-              Get started
-            </button>
+          <div className=" flex flex-col  md:w-1/2 px-4 py-2">
+            <h3 className=" text-blue-500 uppercase text-xl">
+              DUY&apos;S BLOG
+            </h3>
+            <p className="my-2 text-base text-gray-900 md:text-sm line-clamp-2">
+              Secion description content here Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Asperiores placeat aliquam ab maxime
+              possimus voluptates aperiam illo sed soluta corporis molestiae,
+              ducimus fuga voluptatem reiciendis unde dicta nihil neque non.
+            </p>
+            <div className="items-start mt-2">
+              <ButtonNavigation>
+                <span className="mr-2">See more </span>
+                <FontAwesomeIcon icon={faArrowRight} />
+              </ButtonNavigation>
+            </div>
           </div>
         </div>
 
-        <hr className="my-10 border-gray-200 dark:border-gray-700" />
+        <hr className="my-10 border-gray-200 " />
 
         <div className="flex flex-col items-center sm:flex-row sm:justify-between">
           <p className="text-sm text-gray-400">
-            © Copyright 2021. All Rights Reserved.
+            © Copyright 2022. All Rights Reserved.
           </p>
 
           <div className="flex mt-3 -mx-2 sm:mt-0">
-            <a
-              href="#"
-              className="mx-2 text-sm text-gray-400 transition-colors duration-300 hover:text-gray-500 dark:hover:text-gray-300"
-              aria-label="Reddit"
-            >
-              {" "}
-              Teams{" "}
-            </a>
-
-            <a
-              href="#"
-              className="mx-2 text-sm text-gray-400 transition-colors duration-300 hover:text-gray-500 dark:hover:text-gray-300"
-              aria-label="Reddit"
-            >
-              {" "}
-              Privacy{" "}
-            </a>
-
-            <a
-              href="#"
-              className="mx-2 text-sm text-gray-400 transition-colors duration-300 hover:text-gray-500 dark:hover:text-gray-300"
-              aria-label="Reddit"
-            >
-              {" "}
-              Cookies{" "}
-            </a>
+            {["Blog", "Linkedin"].map((item) => {
+              return (
+                <a
+                  key={item}
+                  href="#"
+                  className="mx-2 text-sm text-gray-400 transition-colors duration-300 hover:text-gray-500 dark:hover:text-gray-300"
+                  aria-label="Reddit"
+                >
+                  {item}
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>

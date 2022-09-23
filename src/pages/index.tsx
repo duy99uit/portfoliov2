@@ -1,12 +1,9 @@
+import Footer from "@/components/Footer";
+import { appConfig } from "@/config/appConfig";
+import HomeContainer from "@/container/Home";
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import HomeContainer from "@/container/Home";
-import Footer from "@/components/Footer";
-import IntroSection from "@/components/IntroSection";
-import NavBar from "@/components/NavBar";
-import { appConfig } from "@/config/appConfig";
 
 const Home: NextPage = () => {
   return (

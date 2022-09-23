@@ -12,7 +12,7 @@ const ProjectBox = (props: any) => {
         onClick={() => {
           // setIsOpenModal(true);
         }}
-        className="max-w-md mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm cursor-pointer relative"
+        className="max-w-md mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm cursor-pointer relative overflow-hidden"
       >
         {props.tagName && props.tagType && (
           <div className="absolute top-0 right-0 z-10">
@@ -21,14 +21,6 @@ const ProjectBox = (props: any) => {
         )}
 
         <div className="w-full h-48 rounded-t-md overflow-hidden">
-          {/* <Image
-            src={props.img}
-            width="100%"
-            height="100%"
-            layout="responsive"
-            objectFit="cover"
-            alt={props.title}
-          /> */}
           <NextImage src={props.img} />
         </div>
 

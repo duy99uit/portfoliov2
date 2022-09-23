@@ -3,7 +3,7 @@ export const ButtonPrimary = (props: any) => {
   const { children } = props;
   return (
     <button
-      className="focus:outline-none transition duration-150 ease-in-out hover:bg-indigo-600 bg-indigo-700 rounded text-white px-8 py-2 text-sm"
+      className="flex flex-row items-center justify-center focus:outline-none transition duration-150 ease-in-out hover:bg-blue-600 bg-blue-500 rounded text-white px-8 py-2 text-sm"
       {...props}
     >
       {children}
@@ -14,7 +14,19 @@ export const ButtonOutline = (props: any) => {
   const { children } = props;
   return (
     <button
-      className="focus:outline-none ml-3 bg-gray-100 transition duration-150 text-gray-600 ease-in-out hover:border-gray-400 hover:bg-gray-300 border rounded px-8 py-2 text-sm"
+      className="flex flex-row items-center justify-center focus:outline-none ml-3 bg-gray-100 transition duration-150 text-gray-600 ease-in-out hover:border-gray-500 hover:bg-gray-300 border rounded px-8 py-2 text-sm border-gray-400"
+      {...props}
+    >
+      {children}
+    </button>
+  );
+};
+
+export const ButtonNavigation = (props: any) => {
+  const { children } = props;
+  return (
+    <button
+      className="flex flex-row items-center justify-center text-gray-500 ease-in-out hover:text-gray-700  text-md"
       {...props}
     >
       {children}
