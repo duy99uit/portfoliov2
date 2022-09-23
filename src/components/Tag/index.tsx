@@ -1,4 +1,5 @@
-import React from "react";
+import { faAndroid, faApple } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Tag(props: any) {
   const { tagName } = props;
@@ -12,9 +13,20 @@ export const ProjectTag = (props: {
   tagName: string;
   tagType?: "mobile" | "web";
 }) => {
-  const { tagName, tagType = "mobile" } = props;
-  if (tagType === "web") return <div></div>;
-  return <div></div>;
+  const { tagName, tagType = "web" } = props;
+  if (tagType === "mobile")
+    return (
+      <div className="text-sm rounded bg-gradient-to-r from-gray-400 to-gray-700 px-4 py-2 text-white items-center flex flex-row">
+        <FontAwesomeIcon icon={faAndroid} color="#22c55e" size="lg" />
+        <div className="w-2"></div>
+        <FontAwesomeIcon icon={faApple} color="#e5e7eb" size="lg" />
+      </div>
+    );
+  return (
+    <div className="text-sm rounded bg-gradient-to-r from-blue-400 to-blue-600  px-4 py-2 text-white t">
+      {tagName}
+    </div>
+  );
 };
 
 export default Tag;

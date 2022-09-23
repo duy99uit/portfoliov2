@@ -7,6 +7,8 @@ export const posts = [
     authorName: "Sidi dev",
     date: "Jan 4 2022",
     href: "javascript:void(0)",
+    tagName: "Next JS",
+    tagType: "web",
   },
   {
     title: "A Quick Guide to WordPress Hosting",
@@ -16,6 +18,8 @@ export const posts = [
     authorName: "Micheal",
     date: "Jan 4 2022",
     href: "javascript:void(0)",
+    tagName: "Mobile",
+    tagType: "mobile",
   },
   {
     title: "7 Promising VS Code Extensions Introduced in 2022",
@@ -25,6 +29,8 @@ export const posts = [
     authorName: "Luis",
     date: "Jan 4 2022",
     href: "javascript:void(0)",
+    tagName: "Next JS",
+    tagType: "web",
   },
   {
     title: "How to Use Root C++ Interpreter Shell to Write C++ Programs",
@@ -32,7 +38,7 @@ export const posts = [
     img: "https://images.unsplash.com/photo-1617529497471-9218633199c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
     authorLogo: "https://api.uifaces.co/our-content/donated/KtCFjlD4.jpg",
     authorName: "Lourin",
-    date: "Jan 4 2022",
-    href: "javascript:void(0)",
+    tagName: "Mobile",
+    tagType: "mobile",
   },
 ];

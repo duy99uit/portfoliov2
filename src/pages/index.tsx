@@ -15,23 +15,14 @@ const Home: NextPage = () => {
         <title>{appConfig.webMainTitle}</title>
         <link rel="icon" href="/webicon.ico" />
 
-        <meta name="title" content="Doan The Duy | Front End Developer" />
-        <meta
-          name="description"
-          content="Mobile App & Web Front End Developer, work with React, React Native,TypeScript"
-        />
+        <meta name="title" content={appConfig.webMainTitle} />
+        <meta name="description" content={appConfig.contentSEO} />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://duy99uit.github.io/" />
-        <meta
-          property="og:title"
-          content="Doan The Duy | Front End Developer"
-        />
-        <meta
-          property="og:description"
-          content="Mobile App & Web Front End Developer, using React, React Native, TypeScript"
-        />
+        <meta property="og:url" content={appConfig.domain} />
+        <meta property="og:title" content={appConfig.webMainTitle} />
+        <meta property="og:description" content={appConfig.contentSEO} />
         <meta
           property="og:image"
           content="https://res.cloudinary.com/dxc0m9waq/image/upload/v1646512308/metatag_ftkcdv.jpg"
@@ -39,15 +30,9 @@ const Home: NextPage = () => {
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://duy99uit.github.io/" />
-        <meta
-          property="twitter:title"
-          content="Doan The Duy | Front End Developer"
-        />
-        <meta
-          property="twitter:description"
-          content="Mobile App & Web Front End Developer, work with React, React Native,TypeScript"
-        />
+        <meta property="twitter:url" content={appConfig.domain} />
+        <meta property="twitter:title" content={appConfig.webMainTitle} />
+        <meta property="twitter:description" content={appConfig.contentSEO} />
         <meta
           property="twitter:image"
           content="https://res.cloudinary.com/dxc0m9waq/image/upload/v1646512308/metatag_ftkcdv.jpg"

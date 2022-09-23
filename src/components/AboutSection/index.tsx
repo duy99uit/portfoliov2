@@ -1,21 +1,12 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faPeopleLine,
-  faMobileAndroid,
-  faTabletAndroid,
-  faUser,
-  faCakeCandles,
-  faLocationDot,
-  faPhone,
-  faEnvelope,
-} from "@fortawesome/free-solid-svg-icons";
-import {
-  faGithub,
-  faFacebook,
-  faLinkedin,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
 import { Links } from "@/config/constant";
+import {
+  faFacebook, faGithub, faInstagram, faLinkedin
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faCakeCandles, faEnvelope, faLocationDot,
+  faPhone, faUser
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const AboutSection = (props: any) => {
   return (
     <section className="bg-white min-h-screen">
