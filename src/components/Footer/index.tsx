@@ -15,7 +15,7 @@ const Footer = (props: any) => {
             Thanks for visiting my website. Have a nice day !
           </p>
 
-          <div className="flex flex-col mt-4 sm:flex-row sm:items-center sm:justify-center">
+          <div className="flex  mt-4  items-center justify-center">
             <ButtonPrimary>
               <FontAwesomeIcon icon={faDownload} />
               <span className="mx-1">Download CV</span>
