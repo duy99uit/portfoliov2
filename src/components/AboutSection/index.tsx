@@ -129,30 +129,12 @@ const AboutSection = (props: any) => {
                     rel="noreferrer"
                   >
                     <div className="px-4 py-1  items-center rounded bg-gradient-to-r from-blue-100 to-blue-200 hover:from-blue-200 hover:to-blue-300 mr-3 hover:scale-110 transition ease-in-out">
-                      {/* <FontAwesomeIcon icon={item.icon} color="#3b82f6" /> */}
                       <FontAwesomeIcon icon={item.icon} size="lg" />
                     </div>
                   </a>
                 );
               })}
             </div>
-
-            {/* <div className="flex items-center mt-6">
-              <img
-                className="object-cover object-center w-10 h-10 rounded-full"
-                src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-                alt=""
-              />
-
-              <div className="mx-4">
-                <h1 className="text-sm text-gray-700 dark:text-gray-200">
-                  Amelia. Anderson
-                </h1>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Lead Developer
-                </p>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>
