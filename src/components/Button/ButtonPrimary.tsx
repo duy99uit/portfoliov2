@@ -26,7 +26,7 @@ export const ButtonNavigation = (props: any) => {
   const { children } = props;
   return (
     <button
-      className="flex flex-row items-center justify-center text-gray-500 ease-in-out hover:text-gray-700  text-md"
+      className="flex flex-row items-center justify-center text-white ease-in-out hover:text-blue-300  text-lg"
       {...props}
     >
       {children}
