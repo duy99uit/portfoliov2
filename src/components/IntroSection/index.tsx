@@ -18,17 +18,17 @@ const IntroSection = (props: any) => {
         </div>
 
         <div className="flex flex-col items-center mt-6  xl:mt-0">
-          <h2 className="text-2xl  tracking-tight text-blue-700 font-medium text-center">
-            Hi, My Name Is Doan The Duy
-          </h2>
+          <h1 className="text-center font-bold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-blue-700 to-purple-700">
+            Hi, My name is Doan The Duy
+          </h1>
 
-          <p className="block mt-4  text-white  max-w-2xl text-center">
-            I&apos;m a <span className="text-blue-700">Mobile Developer</span>{" "}
+          <p className="block mt-4  text-white  max-w-2xl text-center text-lg">
+            I&apos;m a <span className="text-blue-500">Mobile Developer</span>{" "}
             living in Ho Chi Minh City. I really enjoy creating beautifully
             designed, intuitive, functional and trendy products.
           </p>
-          <p className="mt-5 mb-1 text-xl text-gray-300 font-medium">
-            Technology I know{" "}
+          <p className="mt-4 mb-2 text-xl text-gray-300 font-medium">
+            Technology I know
           </p>
           <div className="flex flex-row flex-wrap justify-center items-center">
             {["React Native", "TypeScript", "Javascript"].map((item) => {
