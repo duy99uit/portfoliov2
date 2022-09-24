@@ -3,7 +3,7 @@ import NextImage from "../NextImage";
 
 export const ExpItem = (props: any) => {
   return (
-    <div className="flex flex-col  p-6 space-y-3 bg-gradient-to-r from-blue-700 to-purple-700 transition-colors duration-300 transform rounded-xl ">
+    <div className="flex flex-col ease-in-out  p-6 space-y-3 bg-gradient-to-r from-blue-700 to-purple-700 transition-colors duration-300 transform rounded-xl hover:to-purple-800 hover:from-blue-800">
       <div className="flex flex-row flex-wrap items-center">
         <div className="flex-none w-10 h-10 rounded-full overflow-hidden">
           <NextImage src={props.logo} />

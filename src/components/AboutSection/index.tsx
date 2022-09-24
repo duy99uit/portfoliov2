@@ -13,20 +13,22 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import NextImage from "../NextImage";
 const AboutSection = (props: any) => {
   return (
     <section className="bg-white min-h-screen">
-      <div className="container px-6 py-10 mx-auto">
-        <h1 className="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl text-right ">
+      <div className="container px-4 py-12 mx-auto">
+        <h1 className="text-right font-bold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-blue-700 to-gray-900">
           About Me
         </h1>
 
-        <div className="mt-8 lg:-mx-6 lg:flex lg:items-center">
-          <img
-            className="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96"
-            src="https://duy99uit.github.io/img/metatag.jpg"
-            alt=""
-          />
+        <div className="mt-4 lg:-mx-6 lg:flex lg:items-center">
+          <div className="w-full lg:mx-6 lg:w-1/2 rounded-xl  lg:h-96 overflow-hidden">
+            <NextImage
+              src="https://duy99uit.github.io/img/metatag.jpg"
+              objectFit="cover"
+            />
+          </div>
 
           <div className="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
             <h3 className=" text-blue-500 uppercase text-xl">
@@ -59,7 +61,7 @@ const AboutSection = (props: any) => {
               );
             })}
 
-            <div className="grid gap-3 grid-cols-2 grid-rows-3 mt-4">
+            <div className="grid gap-2 sm:gap-3 grid-cols-2 grid-rows-3 mt-4">
               {[
                 { id: 1, content: "Doan The Duy", icon: faUser },
                 { id: 2, content: "May 23th 1999", icon: faCakeCandles },
@@ -67,17 +69,17 @@ const AboutSection = (props: any) => {
                 { id: 4, content: "duy99.uit@gmail.com", icon: faEnvelope },
                 {
                   id: 5,
-                  content: "Thu Duc, Ho Chi Minh City",
+                  content: "Thu Duc, Ho Chi Minh",
                   icon: faLocationDot,
                 },
               ].map((item) => {
                 return (
                   <div
                     key={item.id}
-                    className="px-2 py-1 flex flex-row flex-wrap items-center rounded bg-gradient-to-r from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200"
+                    className="px-1 sm:px-2 py-1 flex flex-row flex-wrap items-center rounded bg-gradient-to-r from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200"
                   >
                     <FontAwesomeIcon icon={item.icon} color="#3b82f6" />
-                    <span className="ml-2 text-sm line-clamp-1">
+                    <span className="ml-1 sm:ml-2 text-sm line-clamp-1">
                       {item.content}
                     </span>
                   </div>

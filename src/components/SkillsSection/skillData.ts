@@ -59,4 +59,19 @@ export const skillData = [
     name: "SCSS",
     logo: "https://res.cloudinary.com/dxc0m9waq/image/upload/v1663948477/1280px-Sass_Logo_Color.svg_s0rqot.png",
   },
+  {
+    id: 13,
+    name: "Redux",
+    logo: "https://res.cloudinary.com/dxc0m9waq/image/upload/v1664031304/logo_1_suecwd.png",
+  },
+  {
+    id: 14,
+    name: "GIT",
+    logo: "https://res.cloudinary.com/dxc0m9waq/image/upload/v1664031286/Git_icon.svg_lqh8kb.png",
+  },
+  {
+    id: 15,
+    name: "Ubuntu",
+    logo: "https://res.cloudinary.com/dxc0m9waq/image/upload/v1664031288/1200px-Logo-ubuntu_cof-orange-hex.svg_qby3th.png",
+  },
 ];
