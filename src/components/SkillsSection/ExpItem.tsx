@@ -9,28 +9,22 @@ export const ExpItem = (props: any) => {
           <NextImage src={props.logo} />
         </div>
         <div className="ml-4 text-left">
-          <h1 className="text-2xl font-semibold text-gray-700 capitalize dark:text-white ">
+          <h1 className="text-2xl font-semibold capitalize text-white ">
             {props.companyName}
           </h1>
-          <p className="text-base text-gray-500">{props.time}</p>
+          <p className="text-base text-gray-300">{props.time}</p>
         </div>
       </div>
-      <p className="text-gray-500 dark:text-gray-300 text-left">
-        Role: {props.role}
-      </p>
-      <p className="text-gray-500 dark:text-gray-300 text-left">
-        Technology: {props.techs}
-      </p>
-      <p className="text-gray-500 dark:text-gray-300 text-left">
-        Project: {props.project}
-      </p>
-      <p className="text-gray-500 dark:text-gray-300 text-left">Description:</p>
+      <p className="text-gray-100 text-left">Role: {props.role}</p>
+      <p className="text-gray-100 text-left">Technology: {props.techs}</p>
+      <p className="text-gray-100 text-left">Project: {props.project}</p>
+      <p className="text-gray-100 text-left">Description:</p>
       <div className="pl-2">
         {props.detail &&
           props.detail.length > 0 &&
           props.detail.map((item: any, idx: number) => {
             return (
-              <p key={idx} className="text-gray-400  text-left text-md">
+              <p key={idx} className="text-gray-300  text-left text-md">
                 {item}
               </p>
             );
