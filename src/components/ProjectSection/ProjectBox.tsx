@@ -5,17 +5,25 @@ import { ProjectTag } from "../Tag";
 
 const ProjectBox = (props: any) => {
   const [isOpenModal, setIsOpenModal] = useState<boolean>(false);
+  const disableScrollBehavior = () => {
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeModal = () => {
+    setIsOpenModal(false);
+  };
 
   return (
     <>
       <article
         onClick={() => {
-          // setIsOpenModal(true);
+          disableScrollBehavior();
+          setIsOpenModal(true);
         }}
         className="max-w-md mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm cursor-pointer relative overflow-hidden"
       >
         {props.tagName && props.tagType && (
-          <div className="absolute top-0 right-0 z-10">
+          <div className="absolute top-0 right-0 z-[1]">
             <ProjectTag tagName={props.tagName} tagType={props.tagType} />
           </div>
         )}
@@ -25,11 +33,11 @@ const ProjectBox = (props: any) => {
         </div>
 
         <div className="flex props-center mt-2 pt-3 ml-4 mr-2">
-          <div className="flex-none w-10 h-10 rounded-full">
+          {/* <div className="flex-none w-10 h-10 rounded-full">
             <div className="w-full h-full rounded-full overflow-hidden">
               <NextImage src={props.authorLogo} />
             </div>
-          </div>
+          </div> */}
           <div className="ml-3">
             <span className="block text-gray-900">{props.authorName}</span>
             <span className="block text-gray-400 text-sm">{props.date}</span>
@@ -43,13 +51,8 @@ const ProjectBox = (props: any) => {
             {props.desc}
           </p>
         </div>
-        <MyModal
-          isOpenModal={isOpenModal}
-          onClose={() => {
-            setIsOpenModal(false);
-          }}
-        />
       </article>
+      <MyModal isOpenModal={isOpenModal} closeModal={closeModal} {...props} />
     </>
   );
 };

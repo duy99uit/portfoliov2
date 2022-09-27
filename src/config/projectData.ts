@@ -1,4 +1,4 @@
-export const posts = [
+export const projects = [
   {
     title: "What is SaaS? Software as a Service Explained",
     desc: "Going into this journey, I had a standard therapy regimen, based on looking at the research literature. After I saw the movie, I started to ask other people what they did for their anxiety, and some",

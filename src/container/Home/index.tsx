@@ -7,10 +7,10 @@ import SkillsSection from "@/components/SkillsSection";
 export default function HomeContainer() {
   return (
     <>
-      <NavBar />
+      {/* <NavBar />
       <IntroSection />
       <AboutSection />
-      <SkillsSection />
+      <SkillsSection /> */}
       <ProjectSection />
     </>
   );
