@@ -1,6 +1,6 @@
-import { expData } from "./expData";
+import { expData } from "@/config/expData";
 import { ExpItem } from "./ExpItem";
-import { skillData } from "./skillData";
+import { skillData } from "@/config/skillData";
 import { SkillItem } from "./SkillItem";
 
 const SkillsSection = (props: any) => {
