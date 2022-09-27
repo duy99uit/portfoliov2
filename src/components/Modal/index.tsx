@@ -31,7 +31,7 @@ const MyModal = (props: any) => {
               transition={{
                 duration: 0.4,
               }}
-              className="relative py-8 px-5 md:px-10 bg-white shadow-md rounded border border-gray-400"
+              className="relative py-8 px-5  bg-white shadow-md rounded border border-gray-400"
             >
               <ButtonClose
                 onClick={() => {
@@ -68,11 +68,55 @@ const MyModal = (props: any) => {
                     </span>
                   </div>
                 </div>
-                <div className="pt-3 ml-4 mr-2 mb-3">
+                <div className="pt-3 ml-4 mr-2 mb-3 max-h-56 overflow-y-scroll">
                   <h3 className="text-xl text-gray-900 text-ellipsis ">
                     {props.title}
                   </h3>
                   <p className="text-gray-400 text-md mt-1">{props.desc}</p>
+                  {props?.links?.playStore && props?.links?.playStore && (
+                    <p className="text-gray-500 text-base mt-1">
+                      Download:{" "}
+                      <span className="text-green-500">Play Store</span> -{" "}
+                      <span className="text-blue-500">Apple Store</span>
+                    </p>
+                  )}
+                  <p className="text-gray-400 text-md mt-1">
+                    Time: {props.time} - Teamsize: {props.teamSize}
+                  </p>
+
+                  <p className="text-gray-400 text-md mt-1">
+                    Technology: {props.technology}
+                  </p>
+                  <p className="text-gray-400 text-md mt-1">
+                    Role: {props.role}
+                  </p>
+                  {props?.roleDetail &&
+                    props?.roleDetail?.length > 0 &&
+                    props.roleDetail.map((item: any, idx: number) => {
+                      return (
+                        <p
+                          key={idx}
+                          className="text-gray-400 text-md mt-1 ml-2"
+                        >
+                          - {item}
+                        </p>
+                      );
+                    })}
+                  {props?.features && props?.features?.length > 0 && (
+                    <p className="text-gray-400 text-md mt-1">Feature:</p>
+                  )}
+                  {props?.features &&
+                    props?.features?.length > 0 &&
+                    props.features.map((item: any, idx: number) => {
+                      return (
+                        <p
+                          key={idx}
+                          className="text-gray-400 text-md mt-1 ml-2"
+                        >
+                          - {item}
+                        </p>
+                      );
+                    })}
                 </div>
               </div>
             </motion.div>

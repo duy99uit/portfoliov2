@@ -14,9 +14,11 @@ const ProjectSection = (props: any) => {
   return (
     <section className="bg-white min-h-screen">
       <div className="container px-4 py-8 mx-auto">
-        {/* <div className="text-center">
-          <h1 className="text-3xl text-gray-800 font-semibold">My Project</h1>
-        </div> */}
+        <div className="text-center">
+          <h1 className=" font-bold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-700 to-gray-900">
+            Joined Project
+          </h1>
+        </div>
         {isLoading ? (
           <div className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
             {[1, 2, 3].map((items) => (
@@ -25,7 +27,7 @@ const ProjectSection = (props: any) => {
           </div>
         ) : (
           <div className="mt-3 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {projects.slice(0, 2).map((items, key) => (
+            {projects.slice(0, 5).map((items, key) => (
               <ProjectBox {...items} key={key} />
             ))}
           </div>

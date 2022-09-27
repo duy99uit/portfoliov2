@@ -33,11 +33,11 @@ const ProjectBox = (props: any) => {
         </div>
 
         <div className="flex props-center mt-2 pt-3 ml-4 mr-2">
-          {/* <div className="flex-none w-10 h-10 rounded-full">
-            <div className="w-full h-full rounded-full overflow-hidden">
+          <div className="flex-none w-10 h-10 rounded-full">
+            <div className="w-full h-full rounded-full overflow-hidden border-2 border-gray-300">
               <NextImage src={props.authorLogo} />
             </div>
-          </div> */}
+          </div>
           <div className="ml-3">
             <span className="block text-gray-900">{props.authorName}</span>
             <span className="block text-gray-500 text-sm">{props.date}</span>
