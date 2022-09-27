@@ -11,7 +11,7 @@ export default function HomeContainer() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoadingPage(false);
-    }, 500);
+    }, 1000);
   }, []);
   return (
     <>

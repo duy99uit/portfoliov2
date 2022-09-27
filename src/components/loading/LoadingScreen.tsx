@@ -11,7 +11,7 @@ const LoadingScreen = () => {
           rotate: [0, 0, 270, 270, 0],
           borderRadius: ["20%", "20%", "50%", "50%", "20%"],
         }}
-        transition={{ repeat: Infinity, duration: 2 }}
+        transition={{ repeat: Infinity, duration: 1 }}
       ></motion.div>
     </div>
   );
