@@ -1,4 +1,5 @@
 import { ButtonClose } from "@/components/Button";
+import { motion } from "framer-motion";
 import React, { useEffect } from "react";
 import NextImage from "../NextImage";
 import { ProjectTag } from "../Tag";
@@ -13,14 +14,25 @@ const MyModal = (props: any) => {
     <>
       {isOpenModal && (
         <div
-          className="py-12 bg-gray-700 transition duration-150 ease-in-out z-[100] fixed top-0 right-0 bottom-0 left-0 h-screen"
+          className="py-12 bg-gray-900/95 transition duration-150 ease-in-out z-[100] fixed top-0 right-0 bottom-0 left-0 h-screen justify-center items-center"
           id="modal"
+          onClick={() => {
+            enableScroll();
+            closeModal();
+          }}
         >
           <div
             role="alert"
             className="container mx-auto w-11/12 md:w-2/3 max-w-lg"
           >
-            <div className="relative py-8 px-5 md:px-10 bg-white shadow-md rounded border border-gray-400">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.4,
+              }}
+              className="relative py-8 px-5 md:px-10 bg-white shadow-md rounded border border-gray-400"
+            >
               <ButtonClose
                 onClick={() => {
                   enableScroll();
@@ -63,7 +75,7 @@ const MyModal = (props: any) => {
                   <p className="text-gray-400 text-md mt-1">{props.desc}</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       )}
