@@ -28,8 +28,8 @@ const ProjectBox = (props: any) => {
           </div>
         )}
 
-        <div className="w-full h-48 rounded-t-md overflow-hidden">
-          <NextImage src={props.img} />
+        <div className="w-full aspect-[1920/1080] rounded-t-md overflow-hidden">
+          <NextImage src={props.img} ratio={1920 / 1080} />
         </div>
 
         <div className="flex props-center mt-2 pt-3 ml-4 mr-2">

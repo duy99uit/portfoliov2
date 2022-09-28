@@ -1,4 +1,6 @@
+import { Links } from "@/config/constant";
 import React, { useState } from "react";
+
 export const ButtonPrimary = (props: any) => {
   const { children } = props;
   return (
@@ -25,12 +27,14 @@ export const ButtonOutline = (props: any) => {
 export const ButtonNavigation = (props: any) => {
   const { children } = props;
   return (
-    <button
-      className="flex flex-row items-center justify-center text-white ease-in-out hover:text-blue-300  text-lg"
-      {...props}
-    >
-      {children}
-    </button>
+    <a href={Links.duyBlog} target="_blank" rel="noreferrer" className="flex">
+      <div
+        className="flex flex-row items-center justify-center text-white ease-in-out hover:text-blue-300  text-lg"
+        {...props}
+      >
+        {children}
+      </div>
+    </a>
   );
 };
 

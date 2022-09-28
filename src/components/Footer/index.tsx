@@ -17,8 +17,15 @@ const Footer = (props: any) => {
 
           <div className="flex  mt-4  items-center justify-center">
             <ButtonPrimary>
-              <FontAwesomeIcon icon={faDownload} />
-              <span className="mx-1">Download CV</span>
+              <a
+                // href="../../assets/files/DoanTheDuy_ReactNative_Frontend.pdf"
+                download
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faDownload} />
+                <span className="mx-1">Download CV</span>
+              </a>
             </ButtonPrimary>
           </div>
         </div>
@@ -28,7 +35,7 @@ const Footer = (props: any) => {
           </div>
 
           <div className="flex flex-col w-full md:w-3/5  px-4 py-4 bg-gradient-to-r from-purple-500 to-purple-900">
-            <h3 className=" text-blue-500 uppercase text-2xl">
+            <h3 className=" text-blue-500 uppercase text-2xl font-semibold">
               Visit Duy&apos;S Blog
             </h3>
             <p className="my-2 text-base text-white  line-clamp-2">
@@ -37,8 +44,10 @@ const Footer = (props: any) => {
             </p>
             <div className="items-start mt-2">
               <ButtonNavigation>
-                <span className="mr-2">View now </span>
-                <FontAwesomeIcon icon={faArrowRight} />
+                <>
+                  <span className="mr-2">View now </span>
+                  <FontAwesomeIcon icon={faArrowRight} />
+                </>
               </ButtonNavigation>
             </div>
           </div>

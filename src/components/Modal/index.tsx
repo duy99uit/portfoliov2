@@ -14,7 +14,7 @@ const MyModal = (props: any) => {
     <>
       {isOpenModal && (
         <div
-          className="py-12 bg-gray-900/95 transition duration-150 ease-in-out z-[100] fixed top-0 right-0 bottom-0 left-0 h-screen justify-center items-center"
+          className="py-12 bg-gray-900/95 transition duration-150 ease-in-out z-[100] fixed top-0 right-0 bottom-0 left-0 h-screen flex justify-center items-center"
           id="modal"
           onClick={() => {
             enableScroll();
@@ -49,13 +49,13 @@ const MyModal = (props: any) => {
                   </div>
                 )}
 
-                <div className="w-full h-48 rounded-t-md overflow-hidden">
-                  <NextImage src={props.img} />
+                <div className="w-full aspect-[1920/1080] rounded-t-md overflow-hidden">
+                  <NextImage src={props.img} ratio={1920 / 1080} />
                 </div>
 
-                <div className="flex props-center mt-2 pt-3 ml-4 mr-2">
+                <div className="flex props-center mt-2 py-2 ml-4 mr-2">
                   <div className="flex-none w-10 h-10 rounded-full">
-                    <div className="w-full h-full rounded-full overflow-hidden">
+                    <div className="w-full h-full rounded-full overflow-hidden border-2 border-gray-300">
                       <NextImage src={props.authorLogo} />
                     </div>
                   </div>
@@ -68,7 +68,7 @@ const MyModal = (props: any) => {
                     </span>
                   </div>
                 </div>
-                <div className="pt-3 ml-4 mr-2 mb-3 max-h-56 overflow-y-scroll">
+                <div className="pt-3 pl-2 max-h-56 overflow-y-scroll">
                   <h3 className="text-xl text-gray-900 text-ellipsis ">
                     {props.title}
                   </h3>
