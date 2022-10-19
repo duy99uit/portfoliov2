@@ -1,5 +1,4 @@
 import AboutSection from "@/components/AboutSection";
-import IntroSection from "@/components/IntroSection";
 import IntroSectionV2 from "@/components/IntroSection/IntroV2";
 import LoadingScreen from "@/components/loading/LoadingScreen";
 import NavBar from "@/components/NavBar";
@@ -7,7 +6,7 @@ import ProjectSection from "@/components/ProjectSection";
 import SkillsSection from "@/components/SkillsSection";
 import React, { useState, useEffect } from "react";
 
-export default function HomeContainer() {
+export default function TestContainer() {
   const [isLoadingPage, setIsLoadingPage] = useState<boolean>(true);
   useEffect(() => {
     setTimeout(() => {
@@ -22,9 +21,6 @@ export default function HomeContainer() {
         <>
           {/* <NavBar /> */}
           <IntroSectionV2 />
-          <AboutSection />
-          <SkillsSection />
-          <ProjectSection />
         </>
       )}
     </>
