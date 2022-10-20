@@ -1,4 +1,4 @@
-import { resource } from "@/config/constant";
+import { Links, resource } from "@/config/constant";
 import {
   faFacebook,
   faGithub,
@@ -14,7 +14,7 @@ const IntroSectionV2 = (props: any) => {
   return (
     <section className="bg-gray-900 min-h-screen items-center justify-center flex">
       <div className="container flex flex-col  md:flex-row items-center justify-center px-4 py-12 mx-auto ">
-        <div className="flex justify-center md:justify-end items-center w-full  md:w-1/2 h-screen md:h-96 p-4">
+        <div className="flex justify-center items-center h-screen md:h-96 p-4">
           <AnimatePresence>
             <motion.div
               initial={{ opacity: 0, translateX: -100 }}
@@ -51,46 +51,58 @@ const IntroSectionV2 = (props: any) => {
                 </h4>
               </div>
               <div className="flex flex-row justify-center p-2  mt-4">
-                <div
-                  className={
-                    "w-10 h-10 rounded-full flex bg-blue-100 mx-1 shadow-sm shadow-gray-500/50 justify-center items-center"
-                  }
-                >
-                  <FontAwesomeIcon
-                    icon={faLinkedin}
-                    size="lg"
-                    color="#0ea5e9"
-                  />
-                </div>
-                <div
-                  className={
-                    "w-12 h-12 rounded-full flex bg-purple-100 mx-1 shadow-sm shadow-gray-500/50 justify-center items-center"
-                  }
-                >
-                  <FontAwesomeIcon icon={faGithub} size="lg" color="#7e22ce" />
-                </div>
-                <div
-                  className={
-                    "w-12 h-12 rounded-full flex bg-blue-100 mx-1 shadow-sm shadow-gray-500/50 justify-center items-center"
-                  }
-                >
-                  <FontAwesomeIcon
-                    icon={faFacebook}
-                    size="lg"
-                    color="#4338ca"
-                  />
-                </div>
-                <div
-                  className={
-                    "w-10 h-10 rounded-full flex bg-yellow-100 mx-1 shadow-sm shadow-gray-500/50 justify-center items-center"
-                  }
-                >
-                  <FontAwesomeIcon
-                    icon={faInstagram}
-                    size="lg"
-                    color="#eab308"
-                  />
-                </div>
+                <a href={Links.linkedin} target="_blank" rel="noreferrer">
+                  <div
+                    className={
+                      "w-10 h-10 rounded-full flex bg-blue-100 mx-1 shadow-sm shadow-gray-500/50 justify-center items-center"
+                    }
+                  >
+                    <FontAwesomeIcon
+                      icon={faLinkedin}
+                      size="lg"
+                      color="#0ea5e9"
+                    />
+                  </div>
+                </a>
+                <a href={Links.github} target="_blank" rel="noreferrer">
+                  <div
+                    className={
+                      "w-12 h-12 rounded-full flex bg-purple-100 mx-1 shadow-sm shadow-gray-500/50 justify-center items-center"
+                    }
+                  >
+                    <FontAwesomeIcon
+                      icon={faGithub}
+                      size="lg"
+                      color="#7e22ce"
+                    />
+                  </div>
+                </a>
+                <a href={Links.faceBook} target="_blank" rel="noreferrer">
+                  <div
+                    className={
+                      "w-12 h-12 rounded-full flex bg-blue-100 mx-1 shadow-sm shadow-gray-500/50 justify-center items-center"
+                    }
+                  >
+                    <FontAwesomeIcon
+                      icon={faFacebook}
+                      size="lg"
+                      color="#4338ca"
+                    />
+                  </div>
+                </a>
+                <a href={Links.instagram} target="_blank" rel="noreferrer">
+                  <div
+                    className={
+                      "w-10 h-10 rounded-full flex bg-yellow-100 mx-1 shadow-sm shadow-gray-500/50 justify-center items-center"
+                    }
+                  >
+                    <FontAwesomeIcon
+                      icon={faInstagram}
+                      size="lg"
+                      color="#eab308"
+                    />
+                  </div>
+                </a>
               </div>
             </motion.div>
           </AnimatePresence>
@@ -104,7 +116,7 @@ const IntroSectionV2 = (props: any) => {
               transition={{ duration: 0.75 }}
               exit={{ opacity: 0 }}
             >
-              <h1 className=" font-bold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-blue-700 to-purple-700 max-w-md">
+              <h1 className=" font-bold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-rose-500 to-orange-500 ">
                 My name is Doan The Duy
               </h1>
               <p className=" mt-4  text-white max-w-md  text-lg">

@@ -1,4 +1,5 @@
 import AboutSection from "@/components/AboutSection";
+import AboutSectionV2 from "@/components/AboutSection/AboutSectionV2";
 import IntroSection from "@/components/IntroSection";
 import IntroSectionV2 from "@/components/IntroSection/IntroV2";
 import LoadingScreen from "@/components/loading/LoadingScreen";
@@ -22,7 +23,8 @@ export default function HomeContainer() {
         <>
           {/* <NavBar /> */}
           <IntroSectionV2 />
-          <AboutSection />
+          <AboutSectionV2 />
+          {/* <AboutSection /> */}
           <SkillsSection />
           <ProjectSection />
         </>

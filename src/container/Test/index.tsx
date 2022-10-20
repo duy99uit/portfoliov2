@@ -1,4 +1,5 @@
 import AboutSection from "@/components/AboutSection";
+import AboutSectionV2 from "@/components/AboutSection/AboutSectionV2";
 import IntroSectionV2 from "@/components/IntroSection/IntroV2";
 import LoadingScreen from "@/components/loading/LoadingScreen";
 import NavBar from "@/components/NavBar";
@@ -20,7 +21,8 @@ export default function TestContainer() {
       ) : (
         <>
           {/* <NavBar /> */}
-          <IntroSectionV2 />
+          {/* <IntroSectionV2 /> */}
+          <AboutSectionV2 />
         </>
       )}
     </>

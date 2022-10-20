@@ -28,7 +28,7 @@ export const skillData = [
   },
   {
     id: 6,
-    name: "Tailwind CSS",
+    name: "Tailwind",
     logo: resource["Tailwind CSS"],
   },
   {
