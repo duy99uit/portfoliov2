@@ -10,6 +10,11 @@ import iconSend from "./images/icon/icon_send.png";
 import iconTarget from "./images/icon/target.png";
 import iconAbout from "./images/icon/ab1.png";
 
+import iconFlash from "./images/icon/icon_flash.png";
+import iconFire from "./images/icon/icon_fire.png";
+import iconSetting from "./images/icon/icon_setting.png";
+import iconBookmark from "./images/icon/icon_bookmark.png";
+
 export {
   nextJSIcon,
   nextBlog,
@@ -21,4 +26,8 @@ export {
   iconSend,
   iconAbout,
   iconTarget,
+  iconFlash,
+  iconFire,
+  iconBookmark,
+  iconSetting,
 };

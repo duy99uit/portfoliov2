@@ -6,6 +6,7 @@ import LoadingScreen from "@/components/loading/LoadingScreen";
 import NavBar from "@/components/NavBar";
 import ProjectSection from "@/components/ProjectSection";
 import SkillsSection from "@/components/SkillsSection";
+import ExpSectionV2 from "@/components/SkillsSection/ExpSectionV2";
 import React, { useState, useEffect } from "react";
 
 export default function HomeContainer() {
@@ -24,8 +25,8 @@ export default function HomeContainer() {
           {/* <NavBar /> */}
           <IntroSectionV2 />
           <AboutSectionV2 />
-          {/* <AboutSection /> */}
-          <SkillsSection />
+
+          <ExpSectionV2 />
           <ProjectSection />
         </>
       )}
