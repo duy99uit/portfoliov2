@@ -11,6 +11,7 @@ import NextImage from "../NextImage";
 import { motion, AnimatePresence } from "framer-motion";
 
 const IntroSectionV2 = (props: any) => {
+  const currYear = new Date().getFullYear();
   return (
     <section className="bg-gray-900 min-h-screen items-center justify-center flex">
       <div className="container flex flex-col  md:flex-row items-center justify-center px-4 py-12 mx-auto ">
@@ -44,7 +45,9 @@ const IntroSectionV2 = (props: any) => {
               <div className=" rounded-b-lg bg-gray-100 w-60 px-2 shadow pt-2 pb-3">
                 <h1 className=" text-gray-800 text-xl">
                   Doan The Duy
-                  <span className=" text-gray-600 text-xl">, 24</span>
+                  <span className=" text-gray-600 text-xl">
+                    , {currYear - 1999}
+                  </span>
                 </h1>
                 <h4 className="text-sm text-gray-500 mt-1">
                   Mobile Developer at Ho Chi Minh
