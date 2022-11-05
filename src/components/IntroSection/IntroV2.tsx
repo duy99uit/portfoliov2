@@ -119,7 +119,7 @@ const IntroSectionV2 = (props: any) => {
               transition={{ duration: 0.75 }}
               exit={{ opacity: 0 }}
             >
-              <h1 className=" font-bold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-rose-500 to-orange-500 ">
+              <h1 className=" font-bold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 ">
                 My name is Doan The Duy
               </h1>
               <p className=" mt-4  text-white max-w-md  text-lg">
