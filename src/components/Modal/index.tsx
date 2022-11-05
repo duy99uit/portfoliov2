@@ -74,13 +74,13 @@ const MyModal = (props: any) => {
                   </h3>
                   <p className="text-gray-400 text-md mt-1">{props.desc}</p>
                   {props?.links?.playStore && props?.links?.playStore && (
-                    <p className="text-gray-500 text-base mt-1">
+                    <p className="text-gray-700 text-base mt-1">
                       Download:{" "}
                       <span className="text-green-500">Play Store</span> -{" "}
                       <span className="text-blue-500">Apple Store</span>
                     </p>
                   )}
-                  <p className="text-gray-400 text-md mt-1">
+                  <p className="text-gray-700 text-md mt-1">
                     Time: {props.time} - Teamsize: {props.teamSize}
                   </p>
 

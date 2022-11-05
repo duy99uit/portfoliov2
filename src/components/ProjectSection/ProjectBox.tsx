@@ -20,7 +20,7 @@ const ProjectBox = (props: any) => {
           disableScrollBehavior();
           setIsOpenModal(true);
         }}
-        className="max-w-md mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm cursor-pointer relative overflow-hidden bg-gradient-to-r from-white to-white transition ease-in-out hover:from-purple-300 hover:to-purple-500"
+        className="mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm cursor-pointer relative overflow-hidden bg-gradient-to-r from-white to-white transition ease-in-out hover:from-purple-300 hover:to-purple-500"
       >
         {props.tagName && props.tagType && (
           <div className="absolute top-0 right-0 z-[1]">
