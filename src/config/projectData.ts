@@ -61,7 +61,7 @@ export const projects = [
     title: "My Blog",
     desc: "Personal blog project after research about Notion api, Next JS",
     img: nextBlog,
-    authorLogo: appConfig.logoTGDD,
+    authorLogo: appConfig.defaultAvatar,
     projectName: "My Blog",
     projectCategory: "Personal product",
     time: "Dec - 2021",

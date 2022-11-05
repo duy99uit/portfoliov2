@@ -8,4 +8,6 @@ export const appConfig = {
     "https://res.cloudinary.com/dxc0m9waq/image/upload/v1663942712/fado_dkaevd.webp",
   logoTGDD:
     "https://res.cloudinary.com/dxc0m9waq/image/upload/v1663942710/tgdd_s6xy6r.webp",
+  defaultAvatar:
+    "https://res.cloudinary.com/dxc0m9waq/image/upload/v1667664237/man_owtgra.png",
 };
