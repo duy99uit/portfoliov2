@@ -13,7 +13,7 @@ const AboutSectionV2 = (props: any) => {
   return (
     <section className="bg-white min-h-screen">
       <div className="container px-4 py-12 mx-auto flex flex-col-reverse md:flex-row justify-center items-center">
-        <div className="w-full md:w-1/2 bg-gray-900/10  p-4 rounded-2xl h-screen md:h-auto">
+        <div className="w-full md:w-1/2 bg-gray-900/10  p-4 rounded-2xl md:h-auto mt-8 md:mt-0">
           <a
             href="https://duy99uit.github.io/assets/DoanTheDuy_ReactNative_Frontend.pdf"
             target="_blank"

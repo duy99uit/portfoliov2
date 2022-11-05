@@ -52,11 +52,11 @@ export const ExpItemV2 = (props: any) => {
             : "absolute h-full w-1 bg-gradient-to-t from-blue-300 to-blue-500 top-0 right-0"
         }
       ></div>
-      <div className="flex flex-row flex-wrap items-start">
-        <div className="flex-none w-16 h-16 rounded-full overflow-hidden">
+      <div className="flex flex-col sm:flex-row flex-wrap items-center sm:items-start">
+        <div className="flex-none w-16 h-16 rounded-full overflow-hidden mb-4 sm:mb-0">
           <NextImage src={props.logo} />
         </div>
-        <div className="ml-4 text-left">
+        <div className="ml-0 sm:ml-4 text-left">
           <h1 className="text-2xl font-light text-gray-100 tracking-wide">
             {props.companyName}
           </h1>
