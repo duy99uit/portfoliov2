@@ -63,36 +63,36 @@ export const ExpItemV2 = (props: any) => {
           <p className="text-blue-400 text-left">{props.role}</p>
           <p className="text-sm text-gray-300 mt-1 font-medium">{props.time}</p>
 
-          <p className="text-gray-100 text-left mt-4 items-center flex justify-start">
+          <p className="text-gray-100 text-left mt-4 items-start sm:items-center flex justify-start">
             <span className="translate-y-1 mr-1">
               <Image
                 src={iconSetting}
-                width={20}
-                height={20}
+                width={22}
+                height={22}
                 alt=""
                 objectFit="contain"
               />
             </span>
             Technology: {props.techs}
           </p>
-          <p className="text-gray-100 text-left items-center flex justify-start">
+          <p className="text-gray-100 text-left items-start sm:items-center flex justify-start">
             <span className="translate-y-1 mr-1">
               <Image
                 src={iconBookmark}
-                width={20}
-                height={20}
+                width={22}
+                height={22}
                 alt=""
                 objectFit="contain"
               />
             </span>
             Project: {props.project}
           </p>
-          <p className="text-gray-100 text-left items-center flex justify-start mb-1">
+          <p className="text-gray-100 text-left items-start sm:items-center flex justify-start mb-1">
             <span className="translate-y-1 mr-1">
               <Image
                 src={iconFlash}
-                width={20}
-                height={20}
+                width={22}
+                height={22}
                 alt=""
                 objectFit="contain"
               />
