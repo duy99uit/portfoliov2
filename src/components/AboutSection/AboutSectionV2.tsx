@@ -19,17 +19,8 @@ const AboutSectionV2 = (props: any) => {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="flex flex-row justify-center items-center bg-gradient-to-b from-pink-500 to-pink-600 px-2 rounded-2xl w-48">
-              <p className=" text-white">Get my CV now</p>
-              <div className="ml-2">
-                <Image
-                  src={iconTarget}
-                  width={44}
-                  height={44}
-                  alt=""
-                  objectFit="contain"
-                />
-              </div>
+            <div className="flex flex-row justify-center items-center bg-gradient-to-r from-blue-500 to-purple-500 px-2 py-2 rounded-xl w-48">
+              <p className=" text-white">Download Resume</p>
             </div>
           </a>
 
