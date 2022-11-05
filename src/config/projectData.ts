@@ -18,7 +18,7 @@ export const projects = [
       appleStore: "https://apps.apple.com/vn/app/id1190022173",
     },
     technology: ["React Native", "Expo", "Native Base", "Typescript"],
-    role: "Front-end",
+    role: "Frontend Developer",
     roleDetail: [
       "Owner listing product screens such as: Home, Search result, Campaign/event, Favorite...",
       "Research and implement tracking user with Firebase Analytics and Insider (third party partner)",
@@ -47,7 +47,7 @@ export const projects = [
       website: "https://staging-internal.woka.io/",
     },
     technology: ["NextJS", "Typescript", "Golang", "MUI v5"],
-    role: "Front-end",
+    role: "Frontend Developer",
     roleDetail: [
       "Created UI, base component, wrapped component,...",
       "Implemented feature customer management, feature statistics profit, revenue",

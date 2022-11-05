@@ -4,7 +4,7 @@ export const expData = [
     logo: "https://res.cloudinary.com/dxc0m9waq/image/upload/v1663942710/tgdd_s6xy6r.webp",
     companyName: "MWG - thegioididong.com",
     time: "Jun 2022 - Present",
-    role: "Front-end Developer",
+    role: "Mobile Developer",
     techs: "React Native, Typescript, Javascript",
     project: "Loyalty (Quà tặng VIP), BachHoaXANH Online, MWG SDK",
     detail: [
@@ -18,7 +18,7 @@ export const expData = [
     logo: "https://res.cloudinary.com/dxc0m9waq/image/upload/v1663942712/fado_dkaevd.webp",
     companyName: "Fado Global - MICZONE GROUP",
     time: "Apr 2021 - May 2022",
-    role: "Front-end Developer",
+    role: "Frontend Developer",
     techs:
       "React, React Native, Typescript, Next JS, MUI, Ant Design, TailwindCSS",
     project: "FadoVN Mobile App, Megavita App, Ratraco Web App",
