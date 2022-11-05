@@ -82,23 +82,28 @@ const ProjectBoxV2 = (props: any) => {
               </p>
             )}
             {props?.links?.website && (
-              <p className="text-blue-500 text-sm mt-1">
+              <p className="text-gray-500 text-base mt-1">
                 Website:
                 <a
                   href={props?.links?.website}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-base ml-2"
+                  className="text-base ml-2 text-blue-500"
                 >
-                  view demo
+                  Demo
                 </a>
               </p>
             )}
             <p className="text-gray-500 text-md mt-4 mb-1">
-              Role: {props.role}
-              <span className="ml-4">Teamsize: {props.teamSize} </span>
+              <span className="text-gray-700">Role:</span> {props.role}
+              <span className="ml-4">
+                <span className="text-gray-700">Teamsize:</span>{" "}
+                {props.teamSize}
+              </span>
             </p>
-            <p className="text-gray-500 text-md">Reponsibilities:</p>
+            {props?.roleDetail && props?.roleDetail?.length > 0 && (
+              <p className="text-gray-700 text-md">Reponsibilities:</p>
+            )}
             {props?.roleDetail &&
               props?.roleDetail?.length > 0 &&
               props.roleDetail.map((item: any, idx: number) => {

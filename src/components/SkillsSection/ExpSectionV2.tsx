@@ -16,8 +16,8 @@ const ExpSectionV2 = (props: any) => {
               alt=""
               objectFit="contain"
             />
-            <h1 className=" font-bold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-orange-500 to-orange-700">
-              Worrk Experiences
+            <h1 className=" font-bold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-orange-500 to-orange-700">
+              Work Experiences
             </h1>
             <Image
               src={iconFire}
