@@ -63,14 +63,14 @@ const AboutSectionV2 = (props: any) => {
                   </p>
                   <div className="px-2 pt-4 flex flex-row flex-wrap pb-4">
                     <div className="p-1 py-2 rounded-lg bg-gradient-to-r from-blue-300 to-blue-600 flex flex-row justify-center items-center mr-2 mb-2">
-                      <Image src={iconPhone} width="20" height="20" alt="" />
+                      <Image src={iconSend} width="20" height="20" alt="" />
                       <h4 className="ml-2 text-sm text-gray-100">
                         duy99.uit@gmail.com
                       </h4>
                     </div>
 
                     <div className="p-1 py-2 rounded-lg bg-gradient-to-r from-purple-200 to-purple-600 flex flex-row justify-center items-center mr-1 mb-2">
-                      <Image src={iconSend} width="20" height="20" alt="" />
+                      <Image src={iconPhone} width="20" height="20" alt="" />
                       <h4 className="ml-2 text-sm text-gray-100">
                         0363 003 264
                       </h4>
