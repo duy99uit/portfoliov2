@@ -13,7 +13,6 @@ const ProjectBoxV2 = (props: any) => {
   const closeModal = () => {
     setIsOpenModal(false);
   };
-  console.log("propssss", props);
 
   return (
     <>
@@ -42,14 +41,7 @@ const ProjectBoxV2 = (props: any) => {
 
         <div className="w-full sm:w-1/3 h-96 sm:h-auto rounded-t-md overflow-hidden">
           <div className="w-full h-full relative">
-            <Image
-              src={props.img}
-              width="100%"
-              height="100%"
-              layout="fill"
-              objectFit="cover"
-              alt={""}
-            />
+            <Image src={props.img} layout="fill" objectFit="cover" alt={""} />
           </div>
         </div>
         {/* <div className="w-1/3  bg-gray-300 "></div> */}

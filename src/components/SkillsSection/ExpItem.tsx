@@ -36,7 +36,6 @@ export const ExpItem = (props: any) => {
   );
 };
 export const ExpItemV2 = (props: any) => {
-  console.log("props", props);
   return (
     <div
       className={

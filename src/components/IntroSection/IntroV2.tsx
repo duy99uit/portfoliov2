@@ -39,6 +39,7 @@ const IntroSectionV2 = (props: any) => {
                   height={320 * 1.1}
                   layout="responsive"
                   objectFit="cover"
+                  priority
                   alt={""}
                 />
               </div>

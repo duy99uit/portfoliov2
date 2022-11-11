@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 
 interface INextImage {
   src: string | any;
@@ -11,18 +11,18 @@ const NextImage = ({ src, objectFit = "cover", ratio }: INextImage) => {
   const [height, setHeight] = useState(0);
   const listRef: any = useRef();
 
-  function getListSize() {
+  const getListSize = useCallback(() => {
     const newWidth = listRef?.current?.clientWidth;
     setWidth(newWidth);
     setHeight(newWidth / (ratio ? ratio : 1));
-  }
+  }, [ratio]);
 
   useEffect(() => {
     getListSize();
     if (ratio) {
       window.addEventListener("resize", getListSize);
     }
-  }, []);
+  }, [getListSize, ratio]);
 
   return (
     <div ref={listRef} className="w-full h-full">
