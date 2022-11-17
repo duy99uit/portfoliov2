@@ -19,8 +19,8 @@ const ProjectBoxV2 = (props: any) => {
       <article
         className={
           props.index % 2 === 0
-            ? " mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm relative overflow-hidden bg-gradient-to-b from-purple-200 to-white transition ease-in-out flex flex-col sm:flex-row"
-            : " mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm relative overflow-hidden bg-gradient-to-b from-violet-300 to-white transition ease-in-out  flex flex-col sm:flex-row-reverse"
+            ? " mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm relative overflow-hidden bg-gradient-to-b from-purple-300 to-white transition ease-in-out flex flex-col sm:flex-row"
+            : " mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm relative overflow-hidden bg-gradient-to-b from-violet-400 to-white transition ease-in-out  flex flex-col sm:flex-row-reverse"
         }
       >
         {props.tagName && props.tagType && (
@@ -112,7 +112,7 @@ const ProjectBoxV2 = (props: any) => {
                   return (
                     <span
                       key={idx}
-                      className="text-white text-xs ml-2 px-2 py-1 bg-gradient-to-r from-gray-500 to-gray-700 rounded mb-2 sm:mb-0"
+                      className="text-white text-xs mr-2 px-2 py-1 bg-gradient-to-r from-gray-500 to-gray-700 rounded mb-2 sm:mb-0"
                     >
                       {item}
                     </span>
