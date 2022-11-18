@@ -14,11 +14,7 @@ const AboutSectionV2 = (props: any) => {
     <section className="bg-white min-h-screen">
       <div className="container px-4 py-12 mx-auto flex flex-col-reverse md:flex-row justify-center items-center">
         <div className="w-full md:w-1/2 bg-gray-900/10  p-4 rounded-2xl md:h-auto mt-8 md:mt-0">
-          <a
-            href="https://duy99uit.github.io/assets/DoanTheDuy_ReactNative_Frontend.pdf"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="" target="_blank" rel="noreferrer">
             <div className="flex flex-row justify-center items-center bg-gradient-to-r from-blue-500 to-purple-500 px-2 py-2 rounded-xl w-48">
               <p className=" text-white">Download Resume</p>
             </div>
@@ -62,14 +58,14 @@ const AboutSectionV2 = (props: any) => {
                     are easy to use, and run smoothly on most devices.
                   </p>
                   <div className="px-2 pt-4 flex flex-row flex-wrap pb-4">
-                    <div className="p-1 py-2 rounded-lg bg-gradient-to-r from-blue-300 to-blue-600 flex flex-row justify-center items-center mr-2 mb-2">
+                    {/* <div className="p-1 py-2 rounded-lg bg-gradient-to-r from-blue-300 to-blue-600 flex flex-row justify-center items-center mr-2 mb-2">
                       <Image src={iconSend} width="20" height="20" alt="" />
                       <h4 className="ml-2 text-sm text-gray-100">
                         duy99.uit@gmail.com
                       </h4>
-                    </div>
+                    </div> */}
 
-                    <div className="p-1 py-2 rounded-lg bg-gradient-to-r from-purple-200 to-purple-600 flex flex-row justify-center items-center mr-1 mb-2">
+                    {/* <div className="p-1 py-2 rounded-lg bg-gradient-to-r from-purple-200 to-purple-600 flex flex-row justify-center items-center mr-1 mb-2">
                       <Image src={iconPhone} width="20" height="20" alt="" />
                       <h4 className="ml-2 text-sm text-gray-100">
                         0363 003 264
@@ -84,7 +80,7 @@ const AboutSectionV2 = (props: any) => {
                     <div className="p-1 py-2 rounded-lg bg-gradient-to-r from-purple-200 to-purple-600 flex flex-row justify-center items-center mr-1 mb-2">
                       <Image src={iconPin} width="20" height="20" alt="" />
                       <h4 className="ml-1 text-sm text-gray-100">Thu Duc</h4>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
