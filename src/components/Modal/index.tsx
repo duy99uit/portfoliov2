@@ -1,6 +1,5 @@
 import { ButtonClose } from "@/components/Button";
 import { motion } from "framer-motion";
-import React, { useEffect } from "react";
 import NextImage from "../NextImage";
 import { ProjectTag } from "../Tag";
 const MyModal = (props: any) => {

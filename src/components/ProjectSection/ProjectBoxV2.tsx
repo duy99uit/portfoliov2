@@ -1,8 +1,7 @@
+import Image from "next/image";
 import { useState } from "react";
-import MyModal from "../Modal";
 import NextImage from "../NextImage";
 import { ProjectTag } from "../Tag";
-import Image from "next/image";
 
 const ProjectBoxV2 = (props: any) => {
   const [isOpenModal, setIsOpenModal] = useState<boolean>(false);

@@ -1,15 +1,8 @@
-import {
-  iconAbout,
-  iconGift,
-  iconPhone,
-  iconPin,
-  iconSend,
-  iconTarget,
-} from "@/assets";
+import { iconAbout, iconGift, iconPhone, iconPin, iconSend } from "@/assets";
+import { appSetting } from "@/config/appConfig";
 import { skillData } from "@/config/skillData";
 import Image from "next/image";
 import { SkillItemV2 } from "../SkillsSection/SkillItem";
-import { appSetting } from "@/config/appConfig";
 const AboutSectionV2 = (props: any) => {
   return (
     <section className="bg-white min-h-screen">

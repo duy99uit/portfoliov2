@@ -1,5 +1,4 @@
 import { Links } from "@/config/constant";
-import React, { useState } from "react";
 
 export const ButtonPrimary = (props: any) => {
   const { children } = props;

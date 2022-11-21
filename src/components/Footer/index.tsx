@@ -1,11 +1,3 @@
-import { nextBlog } from "@/assets";
-import { appConfig } from "@/config/appConfig";
-import { faDownload, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ButtonOutline, ButtonPrimary } from "../Button";
-import { ButtonNavigation } from "../Button/ButtonPrimary";
-import NextImage from "../NextImage";
-
 const Footer = (props: any) => {
   return (
     <footer className="bg-gray-800">
