@@ -1,5 +1,4 @@
 .container {
-  /* padding: 0 2rem; */
 }
 
 .main {
@@ -8,8 +7,6 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
 }
 
 .footer {

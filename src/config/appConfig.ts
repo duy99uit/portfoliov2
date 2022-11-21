@@ -11,3 +11,7 @@ export const appConfig = {
   defaultAvatar:
     "https://res.cloudinary.com/dxc0m9waq/image/upload/v1667664237/man_owtgra.png",
 };
+
+export const appSetting = {
+  isShowPrivateInfo: false,
+};

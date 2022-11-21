@@ -9,6 +9,7 @@ import {
 import { skillData } from "@/config/skillData";
 import Image from "next/image";
 import { SkillItemV2 } from "../SkillsSection/SkillItem";
+import { appSetting } from "@/config/appConfig";
 const AboutSectionV2 = (props: any) => {
   return (
     <section className="bg-white min-h-screen">
@@ -57,31 +58,33 @@ const AboutSectionV2 = (props: any) => {
                     product performance to develop products that work correctly,
                     are easy to use, and run smoothly on most devices.
                   </p>
-                  <div className="px-2 pt-4 flex flex-row flex-wrap pb-4">
-                    {/* <div className="p-1 py-2 rounded-lg bg-gradient-to-r from-blue-300 to-blue-600 flex flex-row justify-center items-center mr-2 mb-2">
-                      <Image src={iconSend} width="20" height="20" alt="" />
-                      <h4 className="ml-2 text-sm text-gray-100">
-                        duy99.uit@gmail.com
-                      </h4>
-                    </div> */}
+                  {appSetting.isShowPrivateInfo && (
+                    <div className="px-2 pt-4 flex flex-row flex-wrap pb-4">
+                      <div className="p-1 py-2 rounded-lg bg-gradient-to-r from-blue-300 to-blue-600 flex flex-row justify-center items-center mr-2 mb-2">
+                        <Image src={iconSend} width="20" height="20" alt="" />
+                        <h4 className="ml-2 text-sm text-gray-100">
+                          duy99.uit@gmail.com
+                        </h4>
+                      </div>
 
-                    {/* <div className="p-1 py-2 rounded-lg bg-gradient-to-r from-purple-200 to-purple-600 flex flex-row justify-center items-center mr-1 mb-2">
-                      <Image src={iconPhone} width="20" height="20" alt="" />
-                      <h4 className="ml-2 text-sm text-gray-100">
-                        0363 003 264
-                      </h4>
+                      <div className="p-1 py-2 rounded-lg bg-gradient-to-r from-purple-200 to-purple-600 flex flex-row justify-center items-center mr-1 mb-2">
+                        <Image src={iconPhone} width="20" height="20" alt="" />
+                        <h4 className="ml-2 text-sm text-gray-100">
+                          0363 003 264
+                        </h4>
+                      </div>
+                      <div className="p-1 py-2 rounded-lg bg-gradient-to-r from-purple-500 to-violet-700 flex flex-row justify-center items-center mr-2 mb-2">
+                        <Image src={iconGift} width="20" height="20" alt="" />
+                        <h4 className="ml-1 text-sm text-gray-100">
+                          May 23th 1999
+                        </h4>
+                      </div>
+                      <div className="p-1 py-2 rounded-lg bg-gradient-to-r from-purple-200 to-purple-600 flex flex-row justify-center items-center mr-1 mb-2">
+                        <Image src={iconPin} width="20" height="20" alt="" />
+                        <h4 className="ml-1 text-sm text-gray-100">Thu Duc</h4>
+                      </div>
                     </div>
-                    <div className="p-1 py-2 rounded-lg bg-gradient-to-r from-purple-500 to-violet-700 flex flex-row justify-center items-center mr-2 mb-2">
-                      <Image src={iconGift} width="20" height="20" alt="" />
-                      <h4 className="ml-1 text-sm text-gray-100">
-                        May 23th 1999
-                      </h4>
-                    </div>
-                    <div className="p-1 py-2 rounded-lg bg-gradient-to-r from-purple-200 to-purple-600 flex flex-row justify-center items-center mr-1 mb-2">
-                      <Image src={iconPin} width="20" height="20" alt="" />
-                      <h4 className="ml-1 text-sm text-gray-100">Thu Duc</h4>
-                    </div> */}
-                  </div>
+                  )}
                 </div>
               </div>
             </div>
