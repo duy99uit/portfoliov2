@@ -123,12 +123,16 @@ const IntroSectionV2 = (props: any) => {
               <h1 className=" font-bold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 ">
                 My name is Doan The Duy
               </h1>
-              <p className=" mt-4  text-white max-w-md  text-base">
+              <p className=" mt-4  text-white max-w-md  text-base mb-2">
                 I really enjoy creating beautifully designed, intuitive,
                 functional and trendy products.
-                <br />I especially have a lot of experience in developing web
-                and mobile applications in retail and e-commerce.
               </p>
+              <span className="text-white text-sm">
+                <span className="p-1 bg-blue-500 mr-1 rounded">
+                  1.5 years exp
+                </span>
+                of developing applications in retail and e-commerce
+              </span>
 
               <p className="mt-8 text-xl text-gray-300 ">Technology I know</p>
               <div className="flex flex-row flex-wrap justify-center items-cente mt-4"></div>
