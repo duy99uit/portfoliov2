@@ -1,9 +1,10 @@
 import nextJSIcon from "./images/nextjs-tag.png";
 import nextBlog from "./images/blog.jpg";
 import fadoAppProduct from "./images/product/fadoapp.jpg";
-import ratracoProduct from "./images/product/ratraco.jpg";
+import ratracoProduct from "./images/product/ratraco.png";
 import QTVAppProduct from "./images/product/QTV.png";
 import BHXAppProduct from "./images/product/BHX.png";
+import UIKit from "./images/product/uikit.png";
 
 import iconGift from "./images/icon/icon_gift.png";
 import iconPhone from "./images/icon/icon_phone.png";
@@ -24,6 +25,7 @@ export {
   ratracoProduct,
   QTVAppProduct,
   BHXAppProduct,
+  UIKit,
   iconGift,
   iconPhone,
   iconPin,

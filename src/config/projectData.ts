@@ -4,6 +4,7 @@ import {
   ratracoProduct,
   QTVAppProduct,
   BHXAppProduct,
+  UIKit,
 } from "@/assets";
 import { appConfig } from "./appConfig";
 
@@ -65,6 +66,23 @@ export const projects = [
       "Easily track order status through the app",
       "Tracking user for revenue optimization and push notifcation, voucher, gift with Insider & Google Analytics",
     ],
+  },
+  {
+    title: "MWG SDK",
+    desc: "MWG SDK likes UI Kit (include some common component such as Text, Button, Radio, Select...), for the purpose of providing components frequently used by mobile team projects",
+    img: UIKit,
+    authorLogo: appConfig.logoTGDD,
+    projectName: "MWG SDK",
+    projectCategory: "UI Components",
+    time: "June - 2022",
+    tagName: "Mobile",
+    tagType: "mobile",
+    links: {},
+    technology: ["React Native", "Typescript"],
+    role: "Mobile Developer",
+    roleDetail: [],
+    teamSize: 2,
+    features: [],
   },
   {
     title: "Fado Mobile App",
