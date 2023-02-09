@@ -51,6 +51,7 @@ const AboutSectionV2 = (props: any) => {
                     product performance to develop products that work correctly,
                     are easy to use, and run smoothly on most devices.
                   </p>
+
                   {appSetting.isShowPrivateInfo && (
                     <div className="px-2 pt-4 flex flex-row flex-wrap pb-4">
                       <div className="p-1 py-2 rounded-lg bg-gradient-to-r from-blue-300 to-blue-600 flex flex-row justify-center items-center mr-2 mb-2">

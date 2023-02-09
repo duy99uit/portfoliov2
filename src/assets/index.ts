@@ -2,6 +2,8 @@ import nextJSIcon from "./images/nextjs-tag.png";
 import nextBlog from "./images/blog.jpg";
 import fadoAppProduct from "./images/product/fadoapp.jpg";
 import ratracoProduct from "./images/product/ratraco.jpg";
+import QTVAppProduct from "./images/product/QTV.png";
+import BHXAppProduct from "./images/product/BHX.png";
 
 import iconGift from "./images/icon/icon_gift.png";
 import iconPhone from "./images/icon/icon_phone.png";
@@ -20,6 +22,8 @@ export {
   nextBlog,
   fadoAppProduct,
   ratracoProduct,
+  QTVAppProduct,
+  BHXAppProduct,
   iconGift,
   iconPhone,
   iconPin,

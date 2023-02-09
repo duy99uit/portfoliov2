@@ -120,12 +120,14 @@ const IntroSectionV2 = (props: any) => {
               transition={{ duration: 0.75 }}
               exit={{ opacity: 0 }}
             >
-              <h1 className=" font-bold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 ">
+              <h1 className=" font-bold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 ">
                 My name is Doan The Duy
               </h1>
-              <p className=" mt-4  text-white max-w-md  text-lg">
+              <p className=" mt-4  text-white max-w-md  text-base">
                 I really enjoy creating beautifully designed, intuitive,
                 functional and trendy products.
+                <br />I especially have a lot of experience in developing web
+                and mobile applications in retail and e-commerce.
               </p>
 
               <p className="mt-8 text-xl text-gray-300 ">Technology I know</p>

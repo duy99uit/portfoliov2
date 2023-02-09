@@ -8,7 +8,8 @@ export const expData = [
     techs: "React Native, Typescript, Javascript",
     project: "Loyalty (Quà tặng VIP), BachHoaXANH Online, MWG SDK",
     detail: [
-      "Implemented new features, improved UX/UI, app performance",
+      "Deployed features create order, cart, voucher,...",
+      "Improved UX/UI, app performance",
       "Worked with Typescript, Javascript, React Native",
       "Used Redux, GraphQL,...",
     ],

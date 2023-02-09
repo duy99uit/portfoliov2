@@ -1,7 +1,71 @@
-import { fadoAppProduct, nextBlog, ratracoProduct } from "@/assets";
+import {
+  fadoAppProduct,
+  nextBlog,
+  ratracoProduct,
+  QTVAppProduct,
+  BHXAppProduct,
+} from "@/assets";
 import { appConfig } from "./appConfig";
 
 export const projects = [
+  {
+    title: "Quà tặng VIP",
+    desc: "Quà tặng VIP is an application to accumulate points when customers buy product from thegioididong, Bách hóa XANH, Điện máy XANH",
+    img: QTVAppProduct,
+    authorLogo: appConfig.logoTGDD,
+    projectName: "Quà tặng VIP",
+    projectCategory: "Ecommerce App",
+    time: "Sep - 2022",
+    tagName: "Mobile",
+    tagType: "mobile",
+    links: {
+      playStore: "",
+      appleStore: "",
+    },
+    technology: ["React Native", "Javascript", "Typescript"],
+    role: "Mobile Developer",
+    roleDetail: [
+      "Implemented, features create order (clean & care electrical equipment), voucher, cart, send feedback and complain,...",
+      "Used GraphQL to app",
+      "Focused on UX/UI optimization ",
+    ],
+    teamSize: 6,
+    features: [
+      "Easily search for products from many categories such as technology, beauty, health care, fashion, ... with full information about prices, colors, sizes, ...",
+      "Update popular shopping trends, discounted products around the world",
+      "Easily track order status through the app",
+      "Tracking user for revenue optimization and push notifcation, voucher, gift with Insider & Google Analytics",
+    ],
+  },
+  {
+    title: "Bách hóa XANH Online V2",
+    desc: "Bách hóa XANH Online is an ecommerce project, specializes in selling everyday consumer products such as food, drink,...",
+    img: BHXAppProduct,
+    authorLogo: appConfig.logoTGDD,
+    projectName: "Bách hóa XANH Online V2",
+    projectCategory: "Ecommerce App",
+    time: "June - 2022",
+    tagName: "Mobile",
+    tagType: "mobile",
+    links: {
+      playStore: "",
+      appleStore: "",
+    },
+    technology: ["React Native", "Javascript"],
+    role: "Mobile Developer",
+    roleDetail: [
+      "Implemented, maintained feature related to product listing display (category, search, product by brand...) ",
+      "Improved UX/UI, app performance",
+      "Knew about animation, implemented to app with React Native Aminated and 3rd library support",
+    ],
+    teamSize: 5,
+    features: [
+      "Easily search for products from many categories such as technology, beauty, health care, fashion, ... with full information about prices, colors, sizes, ...",
+      "Update popular shopping trends, discounted products around the world",
+      "Easily track order status through the app",
+      "Tracking user for revenue optimization and push notifcation, voucher, gift with Insider & Google Analytics",
+    ],
+  },
   {
     title: "Fado Mobile App",
     desc: "Fado Mobile App is a product of Fado.vn on Android & IOS devices, users can use app for ordering products from Amazon easier.",
@@ -57,23 +121,4 @@ export const projects = [
     teamSize: 5,
     features: [],
   },
-  // {
-  //   title: "My Blog",
-  //   desc: "Personal blog project after research about Notion api, Next JS",
-  //   img: nextBlog,
-  //   authorLogo: appConfig.defaultAvatar,
-  //   projectName: "My Blog",
-  //   projectCategory: "Personal product",
-  //   time: "Dec - 2021",
-  //   tagName: "Next JS",
-  //   tagType: "web",
-  //   links: {
-  //     website: "https://duyblog.vercel.app/",
-  //   },
-  //   technology: ["NextJS", "Typescript", "Notion", "Tailwind css"],
-  //   role: "Owner project",
-  //   roleDetail: [],
-  //   teamSize: 1,
-  //   features: [],
-  // },
 ];
