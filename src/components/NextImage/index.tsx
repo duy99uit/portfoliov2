@@ -28,8 +28,8 @@ const NextImage = ({ src, objectFit = "cover", ratio }: INextImage) => {
     <div ref={listRef} className="w-full h-full">
       <Image
         src={src}
-        width={ratio ? width : "100%"}
-        height={ratio ? height : "100%"}
+        width={ratio && width !== undefined ? width : 500}
+        height={ratio && height !== undefined ? height : 500}
         layout="responsive"
         objectFit={objectFit}
         alt={""}
