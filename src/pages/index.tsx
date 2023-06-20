@@ -4,6 +4,7 @@ import HomeContainer from "@/container/Home";
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import HomeV2 from "@/container/V2";
 
 const Home: NextPage = () => {
   return (
@@ -39,7 +40,7 @@ const Home: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <HomeContainer />
+      <HomeV2 />
 
       <Footer />
     </div>

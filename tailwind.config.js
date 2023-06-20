@@ -4,7 +4,11 @@ module.exports = {
   // },
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./next.config.js"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        custom: ['"WindSong"', "cursive"],
+      },
+    },
   },
   plugins: [require("@tailwindcss/line-clamp")],
 };

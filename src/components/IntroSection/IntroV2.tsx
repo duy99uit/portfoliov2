@@ -37,8 +37,6 @@ const IntroSectionV2 = (props: any) => {
                   src="https://res.cloudinary.com/dxc0m9waq/image/upload/v1666197591/avatar_ezw5cm.jpg"
                   width={240 * 1.1}
                   height={320 * 1.1}
-                  layout="responsive"
-                  objectFit="cover"
                   priority
                   alt={""}
                 />

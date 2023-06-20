@@ -19,11 +19,11 @@ export default function HomeContainer() {
       ) : (
         <>
           {/* <NavBar /> */}
-          {/* <IntroSectionV2 />
+          <IntroSectionV2 />
           <AboutSectionV2 />
 
           <ExpSectionV2 />
-          <ProjectSection /> */}
+          <ProjectSection />
         </>
       )}
     </>
