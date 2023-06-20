@@ -7,7 +7,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const threshold = 100; // Adjust the threshold as needed
+      const threshold = 1; // Adjust the threshold as needed
 
       if (scrollPosition > threshold) {
         setBgColor("bg-black bg-opacity-50");

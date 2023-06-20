@@ -48,7 +48,55 @@ export default function HomeV2() {
             </div>
           </div>
 
-          <div className="h-screen w-full bg-red-500 min-h-screen"></div>
+          <div className="py-24 w-full bg-black flex  justify-center items-center">
+            <div className="w-2/5  rounded-2xl relative bg-gradient-to-b from-gray-900 to-gray-800 overflow-hidden">
+              <div className="top-0 left-0 right-0 z-10 bg-gray-800 px-4 py-2 absolute justify-start item-start flex flex-row">
+                <div className="w-3 h-3 rounded-full bg-red-500 mr-3"></div>
+                <div className="w-3 h-3 rounded-full bg-yellow-500 mr-3"></div>
+                <div className="w-3 h-3 rounded-full bg-green-500"></div>
+              </div>
+              <div className="pt-10 px-6 py-6">
+                <h6 className="text-xl text-gray-500">{`// Technologies & Tools I used`}</h6>
+                <h6 className="text-2xl text-blue-500 mt-4">{`Program Languages:`}</h6>
+                <ul className="ml-4">
+                  <li>
+                    <p className="text-lg text-white">&#x2022; Typescript</p>
+                  </li>
+                  <li>
+                    <p className="text-lg text-white">&#x2022; Javascript</p>
+                  </li>
+                </ul>
+                <h6 className="text-2xl text-green-500 mt-2">{`Framework & Library: `}</h6>
+                <ul className="ml-4">
+                  <li>
+                    <p className="text-lg text-white">&#x2022; React Native</p>
+                  </li>
+                  <li>
+                    <p className="text-lg text-white">&#x2022; Next JS</p>
+                  </li>
+                  <li>
+                    <p className="text-lg text-white">&#x2022; React JS</p>
+                  </li>
+                </ul>
+                <h6 className="text-2xl text-purple-500 mt-2">{`Other Knowledge: `}</h6>
+                <ul className="ml-4">
+                  <li>
+                    <p className="text-lg text-white">
+                      &#x2022; UI Framework: MUI, TailwindCSS, Ant Design
+                    </p>
+                  </li>
+                  <li>
+                    <p className="text-lg text-white">
+                      &#x2022; Source code management: GIT, Sourcetree
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <AboutSectionV2 />
+          <ProjectSection />
+          <ExpSectionV2 />
         </div>
       )}
     </>
