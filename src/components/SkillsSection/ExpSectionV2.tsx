@@ -5,7 +5,7 @@ import { ExpItemV2 } from "./ExpItem";
 
 const ExpSectionV2 = (props: any) => {
   return (
-    <section className="bg-gray-900  w-full min-h-screen">
+    <section className="bg-black w-full min-h-screen">
       <div className="container px-4 py-8 mx-auto max-w-4xl">
         <div className="flex justify-center items-center">
           <div className="flex flex-row justify-center items-center">

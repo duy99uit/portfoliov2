@@ -10,3 +10,14 @@ export const AppleButton = (props: { text: string }) => {
     </div>
   );
 };
+
+export const LinkedinButton = (props: { text: string }) => {
+  const { text = "" } = props;
+  return (
+    <button className="bg-gradient-to-r border-2 border-blue-400 from-blue-400 to-blue-500 text-white p-1 rounded-full cursor-pointer">
+      <h6 className="text-base font-black text-white py-1.5 px-4 hover:text-gray-300">
+        {text}
+      </h6>
+    </button>
+  );
+};

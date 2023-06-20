@@ -8,7 +8,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export const Iphone = (props: { text?: string; size?: number }) => {
   return (
-    <div className="w-72 h-[36rem] bg-gray-700 rounded-2xl border-2 border-gray-800 flex flex-col p-1 items-center relative overflow-hidden shadow-lg">
+    <div className="max-w-80 sm:w-72 h-[36rem] bg-gray-700 rounded-2xl border-2 border-gray-800 flex flex-col p-1 items-center relative overflow-hidden shadow-lg">
       <div className="absolute bottom-0 left-0 right-0   flex justify-center items-end -translate-y-2">
         <div className="h-1 w-16 rounded bg-gray-400"></div>
       </div>
@@ -50,35 +50,35 @@ export const Iphone = (props: { text?: string; size?: number }) => {
               {
                 id: 1,
                 name: 1,
-                bg: "border-yellow-400",
+                bg: "border-yellow-300",
                 icon: faRotateLeft,
                 color: "#facc15",
               },
               {
                 id: 2,
                 name: 2,
-                bg: "border-red-400",
+                bg: "border-red-300",
                 icon: faXmark,
                 color: "#f87171",
               },
               {
                 id: 3,
                 name: 3,
-                bg: "border-blue-400",
+                bg: "border-blue-300",
                 icon: faStar,
                 color: "#60a5fa",
               },
               {
                 id: 4,
                 name: 4,
-                bg: "border-green-400",
+                bg: "border-green-300",
                 icon: faHeart,
                 color: "#4ade80",
               },
               {
                 id: 5,
                 name: 5,
-                bg: "border-violet-400",
+                bg: "border-violet-300",
                 icon: faBolt,
                 color: "#a78bfa",
               },
