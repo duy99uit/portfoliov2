@@ -24,7 +24,7 @@ export const Iphone = (props: { text?: string; size?: number }) => {
           alt="Image"
         />
       </div>
-      <div className="absolute bottom-0 left-0 right-0 h-64 z-10 bg-gradient-to-b from-transparent to-black px-2 pb-2 justify-end items-end flex-col flex">
+      <div className="absolute bottom-0 left-0 right-0 pt-4 z-10 bg-gradient-to-b from-transparent to-black px-2 pb-2 justify-end items-end flex-col flex">
         <div className="w-full">
           <div className="h-24 p-2 flex justify-end flex-col">
             <div className="flex flex-row justify-start items-center">

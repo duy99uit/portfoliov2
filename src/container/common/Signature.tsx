@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const Signature = () => {
   return (
-    <div className="inline-block relative font-custom">
+    <div className="inline-block relative font-custom cursor-pointer">
       <h1 className={`text-blue-600 inline-block text-4xl font-bold`}>
         Duy
         <span
