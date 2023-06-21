@@ -241,7 +241,7 @@ export default function HomeV2() {
             </div>
           </div>
 
-          <ProjectSection />
+          {/* <ProjectSection /> */}
         </div>
       )}
     </>
