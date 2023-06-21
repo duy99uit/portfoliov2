@@ -21,6 +21,7 @@ import { Iphone } from "../common/IPhone";
 import { SectionHeading } from "../common/SectionHeading";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
 import { expData } from "@/config/expData";
+import { projects } from "@/config/projectData";
 export default function HomeV2() {
   const [isLoadingPage, setIsLoadingPage] = useState<boolean>(true);
   useEffect(() => {
@@ -121,7 +122,7 @@ export default function HomeV2() {
                 return (
                   <div
                     key={item.id}
-                    className={`w-full sm:w-4/5 ${_position} my-4 px-0 sm:px-4`}
+                    className={`w-full lg:w-4/5 ${_position} my-4 px-0 lg:px-4`}
                   >
                     <div className="p-[1px] bg-gradient-to-b from-gray-900 hover:from-blue-300 to-gray-800 hover:to-blue-500 rounded-3xl transition-colors duration-300 ">
                       <div className="bg-gradient-to-b from-black to-gray-900 w-full h-full rounded-3xl p-8 ">
@@ -190,9 +191,57 @@ export default function HomeV2() {
               })}
             </div>
           </div>
+          <div className="w-full bg-gradient-to-b from-gray-900 to-black py-8 min-h-screen h-auto px-4 sm:px-0">
+            <div className="container w-full mx-auto flex flex-col">
+              <div className="text-center">
+                <SectionHeading text="Recent Project." />
+                <div className="flex flex-row flex-wrap justify-start items-center w-full mt-6">
+                  {projects.map((item) => {
+                    return (
+                      <div
+                        key={item.title}
+                        className="w-full sm:w-1/2 lg:w-1/2 px-0 py-2 sm:p-2"
+                      >
+                        <div className="p-[1px] bg-gray-800 hover:bg-gray-700 rounded-2xl ">
+                          <div className="w-full h-full bg-gradient-to-b from-gray-900 to-black rounded-2xl overflow-hidden ">
+                            <div className="h-48 w-full "></div>
+                            <div className=" w-full bg-gradient-to-b from-black to-black hover:from-black hover:to-gray-800 p-4">
+                              <h6 className="text-2xl text-white font-semibold text-left">
+                                {item.title}
+                                <span className="text-sm pl-2 text-sky-500 inline-block">
+                                  &#x2022; {item.projectCategory}
+                                </span>
+                              </h6>
+                              <p className="text-base text-gray-500  text-left mt-3">
+                                {item.desc}
+                              </p>
+                              <h6 className="mt-3 text-xl text-gray-400  text-left">
+                                Reponsibilities:
+                              </h6>
+                              <div className="ml-4 text-left">
+                                {item?.features?.map((_features) => {
+                                  return (
+                                    <p
+                                      key={_features}
+                                      className="text-base text-gray-500 font-light mt-1"
+                                    >
+                                      &#x2022; {_features}
+                                    </p>
+                                  );
+                                })}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
 
-          {/* <ProjectSection />
-          <ExpSectionV2 /> */}
+          <ProjectSection />
         </div>
       )}
     </>
