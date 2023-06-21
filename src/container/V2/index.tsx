@@ -19,6 +19,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Iphone } from "../common/IPhone";
 import { SectionHeading } from "../common/SectionHeading";
+import { faRocket } from "@fortawesome/free-solid-svg-icons";
+import { expData } from "@/config/expData";
 export default function HomeV2() {
   const [isLoadingPage, setIsLoadingPage] = useState<boolean>(true);
   useEffect(() => {
@@ -107,6 +109,85 @@ export default function HomeV2() {
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+          <div className="w-full bg-gradient-to-b from-black to-gray-900 py-8 min-h-screen h-auto px-4 sm:px-0">
+            <div className="container w-full mx-auto flex flex-col">
+              <div className="text-right">
+                <SectionHeading text="Experiences." />
+              </div>
+              {expData.map((item, index) => {
+                const _position = index % 2 !== 0 ? "ml-auto" : "mr-auto";
+                return (
+                  <div
+                    key={item.id}
+                    className={`w-full sm:w-4/5 ${_position} my-4 px-0 sm:px-4`}
+                  >
+                    <div className="p-[1px] bg-gradient-to-b from-gray-900 hover:from-blue-300 to-gray-800 hover:to-blue-500 rounded-3xl transition-colors duration-300 ">
+                      <div className="bg-gradient-to-b from-black to-gray-900 w-full h-full rounded-3xl p-8 ">
+                        <div className="flex flex-row justify-start items-center">
+                          <div className="h-[100px] w-[100px] rounded-full  bg-gradient-to-b from-blue-300 to-blue-500 justify-center items-center flex">
+                            <div className="w-24 h-24 rounded-full bg-gray-500">
+                              <img
+                                className="w-full h-full object-cover rounded-full"
+                                src={item.logo}
+                                alt="Image"
+                              />
+                            </div>
+                          </div>
+                          <div className="p-2 ml-4">
+                            <h6 className="text-white text-2xl sm:text-3xl font-medium mb-1">
+                              {item.companyName}
+                            </h6>
+                            <p className="text-blue-500 text-lg sm:text-xl">
+                              {item.role}
+                            </p>
+                            <div className="flex flex-row justify-start items-center mt-2">
+                              <p className="text-sm text-white px-2 py-1 rounded-xl bg-blue-400 block">
+                                {item.time}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="w-full mt-4 border-t border-gray-900 p-4">
+                          <h6 className="text-lg sm:text-xl text-gray-100 ">
+                            Projects:
+                            <span className="text-blue-300 ml-4 text-lg sm:text-xl">
+                              {item.project}
+                            </span>
+                          </h6>
+                          <h6 className="text-base sm:text-lg text-gray-300 font-semibold mt-1">
+                            Technologies:
+                            <span className=" ml-4 text-base sm:text-lg">
+                              {item.techs}
+                            </span>
+                          </h6>
+                          <h6 className=" text-base sm:text-xl text-white  mt-2">
+                            <FontAwesomeIcon
+                              icon={faRocket}
+                              size="sm"
+                              color={"rgba(243 ,244 ,246,0.9)"}
+                            />{" "}
+                            Contributions:
+                          </h6>
+                          <div className="ml-6">
+                            {item?.detail?.map((_detail) => {
+                              return (
+                                <p
+                                  key={_detail}
+                                  className="text-base sm:text-lg text-gray-400 font-light mt-1"
+                                >
+                                  &#x2022; {_detail}
+                                </p>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
 

@@ -28,7 +28,7 @@ export const Iphone = (props: { text?: string; size?: number }) => {
         <div className="w-full">
           <div className="h-24 p-2 flex justify-end flex-col">
             <div className="flex flex-row justify-start items-center">
-              <span className="p-1 bg-green-500 mb-1 rounded-full text-sm text-gray-100">
+              <span className="py-1 px-2 bg-green-400 mb-1 rounded-2xl text-sm text-gray-50">
                 2 years exp
               </span>
             </div>

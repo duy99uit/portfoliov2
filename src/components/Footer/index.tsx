@@ -1,8 +1,9 @@
 const Footer = (props: any) => {
   return (
-    <footer className="bg-gray-800">
-      <div className="container px-4 py-8 mx-auto">
-        <div className="flex flex-col items-center sm:flex-row sm:justify-between">
+    <footer className="bg-gradient-to-b from-black to-gray-900 relative">
+      {/* <div className="absolute top-0 left-0 right-0 bottom-0 bg-red-500"></div> */}
+      <div className="container px-4 py-8 mx-auto ">
+        <div className="flex flex-col items-center sm:flex-row sm:justify-between border-t border-gray-700 pt-4">
           <p className="text-sm text-gray-400">
             © Copyright {new Date().getFullYear()}. Designed by Duy.
           </p>
