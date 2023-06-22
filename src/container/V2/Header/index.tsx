@@ -10,7 +10,7 @@ const Header = () => {
       const threshold = 1; // Adjust the threshold as needed
 
       if (scrollPosition > threshold) {
-        setBgColor("bg-black bg-opacity-50");
+        setBgColor("bg-black bg-opacity-80");
       } else {
         setBgColor("bg-black");
       }
