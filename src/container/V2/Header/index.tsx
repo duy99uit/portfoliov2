@@ -1,4 +1,5 @@
 import Signature from "@/container/common/Signature";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const Header = () => {
@@ -33,9 +34,11 @@ const Header = () => {
           {["About", "Projects", "Experiences"].map((item) => {
             return (
               <li key={item} className="mx-2">
-                <span className="text-gray-300 cursor-pointer hover:text-white text-base transition-colors duration-300">
-                  {item}
-                </span>
+                <Link href="#scroll-section">
+                  <p className="text-gray-300 cursor-pointer hover:text-white text-base transition-colors duration-300">
+                    {item}
+                  </p>
+                </Link>
               </li>
             );
           })}

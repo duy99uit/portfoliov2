@@ -192,7 +192,10 @@ export default function HomeV2() {
               })}
             </div>
           </div>
-          <div className="w-full bg-gradient-to-b from-gray-900 to-black py-8 min-h-screen h-auto px-4 sm:px-0">
+          <section
+            id="scroll-section"
+            className="w-full bg-gradient-to-b from-gray-900 to-black py-8 min-h-screen h-auto px-4 sm:px-0"
+          >
             <div className="container w-full mx-auto flex flex-col">
               <div className="text-center">
                 <SectionHeading text="Recent Project." />
@@ -262,7 +265,7 @@ export default function HomeV2() {
                 </div>
               </div>
             </div>
-          </div>
+          </section>
 
           {/* <ProjectSection /> */}
         </div>
