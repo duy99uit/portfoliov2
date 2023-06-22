@@ -19,10 +19,10 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Iphone } from "../common/IPhone";
 import { SectionHeading } from "../common/SectionHeading";
-import { faRocket, faUsers } from "@fortawesome/free-solid-svg-icons";
+import { faRocket, faUsers, faClock } from "@fortawesome/free-solid-svg-icons";
 import { expData } from "@/config/expData";
 import { projects } from "@/config/projectData";
-import { faClock } from "@fortawesome/free-regular-svg-icons";
+
 export default function HomeV2() {
   const [isLoadingPage, setIsLoadingPage] = useState<boolean>(true);
   useEffect(() => {
@@ -115,7 +115,7 @@ export default function HomeV2() {
           </div>
           <div className="w-full bg-gradient-to-b from-black to-gray-900 py-8 min-h-screen h-auto px-4 sm:px-0">
             <div className="container w-full mx-auto flex flex-col">
-              <div className="text-right">
+              <div className="text-right mb-4">
                 <SectionHeading text="Experiences." />
               </div>
               {expData.map((item, index) => {
@@ -239,12 +239,12 @@ export default function HomeV2() {
                                   {`Teamsize: ${item.teamSize}`}
                                 </span>
                               </div>
-                              <div className="mt-4 flex justify-start items-center">
+                              <div className="mt-4 flex justify-start items-center flex-wrap">
                                 {item.technology.map((technology) => {
                                   return (
                                     <div
                                       key={technology}
-                                      className="py-1 px-3 bg-gradient-to-br from-blue-500 to-blue-400 ml-3 rounded-lg"
+                                      className="py-1 px-3 bg-gradient-to-br from-blue-500 to-blue-400 ml-3 rounded-lg mb-3"
                                     >
                                       <p className="text-base text-white ">
                                         {technology}

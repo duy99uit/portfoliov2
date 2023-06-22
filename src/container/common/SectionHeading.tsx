@@ -3,11 +3,11 @@ export const SectionHeading = (props: { text?: string; size?: number }) => {
   return (
     <div className="inline-block relative">
       <h1
-        className={`text-blue-600 inline-block text-3xl sm:text-4xl font-bold`}
+        className={`text-blue-600 inline-block text-4xl sm:text-5xl font-bold`}
       >
         {text}
         <span
-          className={`absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-200 via-blue-500 to-blue-600 bg-clip-text text-transparent text-3xl sm:text-4xl font-bold`}
+          className={`absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-200 via-blue-500 to-blue-600 bg-clip-text text-transparent text-4xl sm:text-5xl font-bold`}
         >
           {text}
         </span>

@@ -22,6 +22,7 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <header
       className={`left-0 right-0 top-0 fixed  z-50 ${bgColor} min-h-4 shadow transition-colors duration-300 py-2`}
@@ -32,9 +33,9 @@ const Header = () => {
           {["About", "Projects", "Experiences"].map((item) => {
             return (
               <li key={item} className="mx-2">
-                <a className="text-gray-300 cursor-pointer hover:text-white text-base transition-colors duration-300">
+                <span className="text-gray-300 cursor-pointer hover:text-white text-base transition-colors duration-300">
                   {item}
-                </a>
+                </span>
               </li>
             );
           })}

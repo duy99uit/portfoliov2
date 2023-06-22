@@ -1,8 +1,17 @@
 import React, { useEffect, useState } from "react";
 
 const Signature = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
-    <div className="inline-block relative font-custom cursor-pointer">
+    <div
+      className="inline-block relative font-custom cursor-pointer"
+      onClick={scrollToTop}
+    >
       <h1 className={`text-blue-600 inline-block text-4xl font-bold`}>
         Duy
         <span
