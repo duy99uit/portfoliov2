@@ -1,27 +1,14 @@
-import AboutSectionV2 from "@/components/AboutSection/AboutSectionV2";
-import IntroSectionV2 from "@/components/IntroSection/IntroV2";
 import LoadingScreen from "@/components/loading/LoadingScreen";
-import ProjectSection from "@/components/ProjectSection";
-import ExpSectionV2 from "@/components/SkillsSection/ExpSectionV2";
-import { useEffect, useState } from "react";
-import Header from "./Header";
-import { AppleText } from "../common/AppleText"; // Import the custom CSS file
-import { AppleButton, LinkedinButton } from "../common/AppleButton";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faGithub,
-  faInstagram,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
-import { Links } from "@/config/constant";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import { Iphone } from "../common/IPhone";
-import { SectionHeading } from "../common/SectionHeading";
-import { faRocket, faUsers, faClock } from "@fortawesome/free-solid-svg-icons";
 import { expData } from "@/config/expData";
 import { projects } from "@/config/projectData";
+import { faClock, faRocket, faUsers } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect, useState } from "react";
+import { AppleButton, LinkedinButton } from "../common/AppleButton";
+import { AppleText } from "../common/AppleText"; // Import the custom CSS file
+import { Iphone } from "../common/IPhone";
+import { SectionHeading } from "../common/SectionHeading";
+import Header from "./Header";
 
 export default function HomeV2() {
   const [isLoadingPage, setIsLoadingPage] = useState<boolean>(true);
@@ -272,8 +259,6 @@ export default function HomeV2() {
               </div>
             </div>
           </section>
-
-          {/* <ProjectSection /> */}
         </div>
       )}
     </>
