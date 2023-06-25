@@ -208,7 +208,13 @@ export default function HomeV2() {
                       >
                         <div className="p-[1px] bg-gray-800 hover:bg-gray-700 rounded-2xl ">
                           <div className="w-full h-full bg-gradient-to-b from-gray-900 to-black rounded-2xl overflow-hidden ">
-                            <div className="h-48 w-full "></div>
+                            <div className="w-full aspect-w-16 aspect-h-9">
+                              <img
+                                className="object-cover rounded-tl-2xl rounded-tr-2xl overflow-hidden"
+                                src={item.image}
+                                alt=""
+                              />
+                            </div>
                             <div className=" w-full bg-gradient-to-b from-black to-black hover:from-black hover:to-gray-800 p-4 text-left">
                               <h6 className="text-2xl text-white font-semibold text-left">
                                 {item.title}

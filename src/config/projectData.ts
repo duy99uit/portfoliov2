@@ -37,6 +37,8 @@ export const projects = [
       "Easily track order status through the app",
       "Tracking user for revenue optimization and push notifcation, voucher, gift with Insider & Google Analytics",
     ],
+    image:
+      "https://res.cloudinary.com/dxc0m9waq/image/upload/v1687700439/portfolio/Mobile_eeilxq.png",
   },
   {
     title: "Bách hóa XANH Online V2",
@@ -66,6 +68,8 @@ export const projects = [
       "Easily track order status through the app",
       "Tracking user for revenue optimization and push notifcation, voucher, gift with Insider & Google Analytics",
     ],
+    image:
+      "https://res.cloudinary.com/dxc0m9waq/image/upload/v1687701263/portfolio/RAM_12_512_GB_mqb2ww.png",
   },
   {
     title: "MWG SDK",
@@ -83,6 +87,8 @@ export const projects = [
     roleDetail: [],
     teamSize: 2,
     features: [],
+    image:
+      "https://res.cloudinary.com/dxc0m9waq/image/upload/v1687704501/portfolio/Copy_of_Copy_of_RAM_12_512_GB_khi5gh.png",
   },
   {
     title: "Fado Mobile App",
@@ -114,6 +120,8 @@ export const projects = [
       "Easily track order status through the app",
       "Tracking user for revenue optimization and push notifcation, voucher, gift with Insider & Google Analytics",
     ],
+    image:
+      "https://res.cloudinary.com/dxc0m9waq/image/upload/v1687702131/portfolio/Copy_of_RAM_12_512_GB_1_v6fd5e.png",
   },
   {
     title: "Ratraco Solution Webapp",
@@ -138,5 +146,7 @@ export const projects = [
     ],
     teamSize: 5,
     features: [],
+    image:
+      "https://res.cloudinary.com/dxc0m9waq/image/upload/v1687704760/portfolio/Untitled_design_abwcpu.png",
   },
 ];
