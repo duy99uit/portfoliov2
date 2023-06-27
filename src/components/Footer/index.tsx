@@ -1,4 +1,12 @@
+import { Links } from "@/config/constant";
+import { useRouter } from "next/router";
+
 const Footer = (props: any) => {
+  const router = useRouter();
+  const openNewPage = (link: string) => {
+    // router.push(link);
+    window.open(link, "_blank");
+  };
   return (
     <footer className="bg-gradient-to-b from-black to-gray-900 relative">
       {/* <div className="absolute top-0 left-0 right-0 bottom-0 bg-red-500"></div> */}
@@ -9,16 +17,21 @@ const Footer = (props: any) => {
           </p>
 
           <div className="flex mt-3 -mx-2 sm:mt-0">
-            {["Blog", "Linkedin"].map((item) => {
+            {[
+              { name: "Duy's blog", link: Links.duyBlog },
+              { name: "Linkedin", link: Links.linkedin },
+            ].map((item) => {
               return (
-                <a
-                  key={item}
-                  href="#"
-                  className="mx-2 text-sm text-gray-400 transition-colors duration-300 hover:text-gray-500 dark:hover:text-gray-300"
+                <p
+                  key={item.name}
+                  onClick={() => {
+                    openNewPage(item.link);
+                  }}
+                  className="mx-2 text-sm text-gray-400 transition-colors duration-300 hover:text-gray-500 dark:hover:text-gray-300 cursor-pointer"
                   aria-label="Reddit"
                 >
-                  {item}
-                </a>
+                  {item.name}
+                </p>
               );
             })}
           </div>
