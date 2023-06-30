@@ -42,7 +42,7 @@ export const Iphone = (props: { text?: string; size?: number }) => {
                 size="sm"
                 color={"rgba(243 ,244 ,246,0.9)"}
               />{" "}
-              Live in TP.HCM
+              Live in ThuDuc, HCM City
             </p>
           </div>
           <div className="pb-2 pt-3 w-full justify-center items-center flex flex-row">
@@ -88,7 +88,7 @@ export const Iphone = (props: { text?: string; size?: number }) => {
               return (
                 <div
                   key={item.id}
-                  className={`${_w} ${_h} border-2 ${item.bg} rounded-full flex justify-center items-center mx-1`}
+                  className={`${_w} ${_h} border-2 ${item.bg} rounded-full flex justify-center items-center mx-1 hover:scale-110 cursor-pointer`}
                 >
                   <FontAwesomeIcon
                     icon={item.icon}
