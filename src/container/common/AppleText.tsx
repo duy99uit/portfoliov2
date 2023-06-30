@@ -4,15 +4,15 @@ export const AppleText = (props: { text?: string; size?: number }) => {
   const { text } = props;
   const [isBlue, setIsBlue] = useState<boolean>(false);
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setIsBlue(!isBlue); // Change the color to blue after 2 seconds
-    }, 2000);
+  // useEffect(() => {
+  //   const timeout = setTimeout(() => {
+  //     setIsBlue(!isBlue);
+  //   }, 2000);
 
-    return () => {
-      clearTimeout(timeout); // Clear the timeout if the component is unmounted before 2 seconds
-    };
-  }, [isBlue]); // Empty dependency array to run the effect only once
+  //   return () => {
+  //     clearTimeout(timeout);
+  //   };
+  // }, [isBlue]);
   return (
     <div className="inline-block relative">
       {isBlue ? (
