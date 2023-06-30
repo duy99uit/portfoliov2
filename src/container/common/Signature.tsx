@@ -10,15 +10,36 @@ const Signature = () => {
 
   const [isBlue, setIsBlue] = useState<boolean>(false);
 
+  // useEffect(() => {
+  //   const timeout = setTimeout(() => {
+  //     setIsBlue(!isBlue);
+  //   }, 5000);
+
+  //   return () => {
+  //     clearTimeout(timeout);
+  //   };
+  // }, [isBlue]);
+
+  // const [bgColor, setBgColor] = useState("bg-black");
+
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      setIsBlue(!isBlue);
-    }, 5000);
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const threshold = 30; // Adjust the threshold as needed
+
+      if (scrollPosition > threshold) {
+        setIsBlue(false);
+      } else {
+        setIsBlue(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      clearTimeout(timeout);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, [isBlue]);
+  }, []);
   return (
     <div
       className="inline-block relative font-custom cursor-pointer"
