@@ -9,6 +9,7 @@ import { AppleText } from "../common/AppleText"; // Import the custom CSS file
 import { Iphone } from "../common/IPhone";
 import { SectionHeading } from "../common/SectionHeading";
 import Header from "./Header";
+import { Links } from "@/config/constant";
 
 export default function HomeV2() {
   const [isLoadingPage, setIsLoadingPage] = useState<boolean>(true);
@@ -17,6 +18,10 @@ export default function HomeV2() {
       setIsLoadingPage(false);
     }, 1000);
   }, []);
+  const openNewPage = (link?: string) => {
+    // router.push(link);
+    window.open(link, "_blank");
+  };
   return (
     <>
       {isLoadingPage ? (
@@ -35,7 +40,12 @@ export default function HomeV2() {
                   I really enjoy creating beautifully designed, intuitive,
                   functional and trendy products.
                 </h6>
-                <AppleButton text="View Github Profile" />
+                <AppleButton
+                  text="View Github Profile"
+                  onClick={() => {
+                    openNewPage(Links.github);
+                  }}
+                />
               </div>
             </div>
           </div>
@@ -51,7 +61,12 @@ export default function HomeV2() {
               <div className="flex justify-start items-center flex-row">
                 <AppleButton text="Get My Resume" />
                 <div className="ml-4">
-                  <LinkedinButton text="Linkedin" />
+                  <LinkedinButton
+                    text="Linkedin"
+                    onClick={() => {
+                      openNewPage(Links.linkedin);
+                    }}
+                  />
                 </div>
               </div>
             </div>
