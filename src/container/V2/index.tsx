@@ -166,20 +166,20 @@ export default function HomeV2() {
                               {item.techs}
                             </span>
                           </h6>
-                          <h6 className=" text-base sm:text-xl text-white  mt-2">
+                          <h6 className=" text-base sm:text-xl text-white  mt-3">
                             <FontAwesomeIcon
                               icon={faRocket}
                               size="sm"
-                              color={"rgba(243 ,244 ,246,0.9)"}
+                              color={"#0ea5e9"}
                             />{" "}
-                            Contributions:
+                            Contributions & Responsibilities:
                           </h6>
                           <div className="ml-6">
                             {item?.detail?.map((_detail) => {
                               return (
                                 <p
                                   key={_detail}
-                                  className="text-base sm:text-lg text-gray-400 font-light mt-1"
+                                  className="text-base sm:text-lg text-gray-200 font-light mt-1"
                                 >
                                   &#x2022; {_detail}
                                 </p>

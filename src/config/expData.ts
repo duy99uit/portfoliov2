@@ -8,10 +8,8 @@ export const expData = [
     techs: "React Native, Typescript, Javascript",
     project: "Loyalty (Quà tặng VIP), BachHoaXANH Online, MWG SDK",
     detail: [
-      "Deployed features create order, cart, voucher,...",
-      "Improved UX/UI, app performance",
-      "Worked with Typescript, Javascript, React Native",
-      "Used Redux, GraphQL,...",
+      "Worked with React Native, Typescript, Javascript, GraphQL",
+      "Implemented features related to campaigns, gift delivery, game events,...",
     ],
   },
   {
@@ -24,10 +22,12 @@ export const expData = [
       "React, React Native, Typescript, Next JS, MUI, Ant Design, TailwindCSS",
     project: "FadoVN Mobile App, Megavita App, Ratraco Web App",
     detail: [
-      "Worked with React Native, Expo Typescript, Javascript, NextJS, Nativebase",
-      "Worked with Redux Toolkit, Context, RESTful APIs, JSON, Axios, Axios Mock Adapter",
+      "Mobile App: React Native, Expo, Typescript, Nativebase, Universal Links (Deeplink), multi-language with i18n, Firebase Analytics",
+      "Web application: Next JS, Typescript, MUI, AntDesign, TailwindCSS, React Hook Form & Yup schema",
+      "Worked with Redux Toolkit, Custom Hook, Context, RESTful APIs, Axios, Axios Mock Adapter, Mock Api, Redux Persist, React Query,...",
       "Have products golive on PlayStore, AppStore",
       "Used Ubuntu, Git, Gitlab, Jira, Trello",
+      "Knew about server side rendering (SSR) & client side rendering (CLR)",
     ],
   },
 ];
