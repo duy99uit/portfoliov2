@@ -103,12 +103,46 @@ export default function HomeV2() {
                 <ul className="ml-4">
                   <li>
                     <p className="text-lg text-white">
-                      &#x2022; UI Framework: MUI, TailwindCSS, Ant Design
+                      &#x2022; Knowledge about Design Pattern, SOLID principal,
+                      Code clean, coding conventions and organization for
+                      reusability and extensibility.
                     </p>
                   </li>
                   <li>
                     <p className="text-lg text-white">
-                      &#x2022; Source code management: GIT, Sourcetree
+                      &#x2022; State Management: Redux thunk, Redux tool-kit,
+                      Redux saga
+                    </p>
+                  </li>
+                  <li>
+                    <p className="text-lg text-white">
+                      &#x2022; Data fetching: Axios, React Query, Apollo Client
+                      (GraphQL APIs)
+                    </p>
+                  </li>
+                  <li>
+                    <p className="text-lg text-white">
+                      &#x2022; Mobile app development tech stack: React
+                      Reanimated, Gesture Handler, Biometric, WebSocket,
+                      Notification,...
+                    </p>
+                  </li>
+                  <li>
+                    <p className="text-lg text-white">
+                      &#x2022; Web app development tech stack: TailwindCSS,
+                      StyleX, MUI, Bootstrap, React Hook Form + Yup Schema,
+                      Frame Motion,...
+                    </p>
+                  </li>
+                  <li>
+                    <p className="text-lg text-white">
+                      &#x2022; Git branching, git flow, SourceTree
+                    </p>
+                  </li>
+                  <li>
+                    <p className="text-lg text-white">
+                      &#x2022; Workflow and Schedule Management: Trello, Jira,
+                      Notion
                     </p>
                   </li>
                 </ul>

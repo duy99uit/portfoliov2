@@ -16,7 +16,7 @@ export const projects = [
     authorLogo: appConfig.logoTGDD,
     projectName: "Quà tặng VIP",
     projectCategory: "Ecommerce App",
-    time: "Sep - 2022",
+    time: "Sep - Present",
     tagName: "Mobile",
     tagType: "mobile",
     links: {
@@ -27,7 +27,7 @@ export const projects = [
     role: "Mobile Developer",
     roleDetail: [
       "Implemented, features create order (clean & care electrical equipment), voucher, cart, send feedback and complain,...",
-      "Used GraphQL to app",
+      "Used GraphQL, Apollo to app",
       "Focused on UX/UI optimization ",
     ],
     teamSize: 6,
