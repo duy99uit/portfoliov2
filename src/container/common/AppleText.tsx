@@ -32,7 +32,7 @@ export const AppleText = (props: { text?: string; size?: number }) => {
         >
           {text}
           <span
-            className={`absolute top-0 left-0 w-full h-full bg-gradient-to-r from-purple-200 via-purple-600 to-indigo-900 bg-clip-text text-transparent text-5xl sm:text-6xl font-bold`}
+            className={`absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-200 via-blue-400 to-blue-700 bg-clip-text text-transparent text-5xl sm:text-6xl font-bold`}
           >
             {text}
           </span>

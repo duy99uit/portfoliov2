@@ -42,7 +42,7 @@ export const Iphone = (props: { text?: string; size?: number }) => {
                 size="sm"
                 color={"rgba(243 ,244 ,246,0.9)"}
               />{" "}
-              Live in ThuDuc, HCM City
+              District 9, HCM City
             </p>
           </div>
           <div className="pb-2 pt-3 w-full justify-center items-center flex flex-row">
